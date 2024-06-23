@@ -1,0 +1,806 @@
+File Branch_Vertices Time Verification Média_Grau_BV Branch_Vertices2 Time2 Verification2 Média_Grau_BV2 
+Instancias\Spd_RF2_1000_1047_6011.txt
+AndersonV4 - Min: 314 Max: 315 Media: 314 Busca Local Min: 314
+Rodrigo - Min: 314 Max: 315 Media: 314 Busca Local Min: 314
+Algoritmo3 - Min: 314 Max: 314 Media: 314 Busca Local Min: 314
+
+Instancias\Spd_RF2_1000_1047_6019.txt
+AndersonV4 - Min: 315 Max: 317 Media: 316 Busca Local Min: 315
+Rodrigo - Min: 316 Max: 317 Media: 316 Busca Local Min: 316
+Algoritmo3 - Min: 315 Max: 315 Media: 315 Busca Local Min: 315
+
+Instancias\Spd_RF2_1000_1047_6027.txt
+AndersonV4 - Min: 315 Max: 316 Media: 315 Busca Local Min: 315
+Rodrigo - Min: 315 Max: 316 Media: 315 Busca Local Min: 315
+Algoritmo3 - Min: 315 Max: 315 Media: 315 Busca Local Min: 315
+
+Instancias\Spd_RF2_1000_1047_6035.txt
+AndersonV4 - Min: 316 Max: 318 Media: 316 Busca Local Min: 316
+Rodrigo - Min: 315 Max: 317 Media: 316 Busca Local Min: 315
+Algoritmo3 - Min: 315 Max: 315 Media: 315 Busca Local Min: 315
+
+Instancias\Spd_RF2_1000_1047_6043.txt
+AndersonV4 - Min: 315 Max: 316 Media: 315 Busca Local Min: 315
+Rodrigo - Min: 314 Max: 316 Media: 315 Busca Local Min: 314
+Algoritmo3 - Min: 314 Max: 314 Media: 314 Busca Local Min: 314
+
+Instancias\Spd_RF2_1000_1095_6051.txt
+AndersonV4 - Min: 295 Max: 298 Media: 296 Busca Local Min: 295
+Rodrigo - Min: 296 Max: 298 Media: 296 Busca Local Min: 296
+Algoritmo3 - Min: 297 Max: 297 Media: 297 Busca Local Min: 297
+
+Instancias\Spd_RF2_1000_1095_6059.txt
+AndersonV4 - Min: 295 Max: 299 Media: 296 Busca Local Min: 295
+Rodrigo - Min: 296 Max: 298 Media: 296 Busca Local Min: 296
+Algoritmo3 - Min: 298 Max: 298 Media: 298 Busca Local Min: 298
+
+Instancias\Spd_RF2_1000_1095_6067.txt
+AndersonV4 - Min: 294 Max: 297 Media: 296 Busca Local Min: 294
+Rodrigo - Min: 295 Max: 297 Media: 296 Busca Local Min: 295
+Algoritmo3 - Min: 296 Max: 296 Media: 296 Busca Local Min: 296
+
+Instancias\Spd_RF2_1000_1095_6075.txt
+AndersonV4 - Min: 294 Max: 295 Media: 294 Busca Local Min: 294
+Rodrigo - Min: 294 Max: 295 Media: 294 Busca Local Min: 294
+Algoritmo3 - Min: 295 Max: 295 Media: 295 Busca Local Min: 295
+
+Instancias\Spd_RF2_1000_1095_6083.txt
+AndersonV4 - Min: 295 Max: 296 Media: 295 Busca Local Min: 295
+Rodrigo - Min: 294 Max: 296 Media: 294 Busca Local Min: 294
+Algoritmo3 - Min: 294 Max: 294 Media: 294 Busca Local Min: 294
+
+Instancias\Spd_RF2_1000_1143_6091.txt
+AndersonV4 - Min: 277 Max: 280 Media: 278 Busca Local Min: 277
+Rodrigo - Min: 277 Max: 280 Media: 278 Busca Local Min: 277
+Algoritmo3 - Min: 281 Max: 281 Media: 281 Busca Local Min: 281
+
+Instancias\Spd_RF2_1000_1143_6099.txt
+AndersonV4 - Min: 277 Max: 279 Media: 277 Busca Local Min: 277
+Rodrigo - Min: 277 Max: 279 Media: 277 Busca Local Min: 277
+Algoritmo3 - Min: 276 Max: 276 Media: 276 Busca Local Min: 276
+
+Instancias\Spd_RF2_1000_1143_6107.txt
+AndersonV4 - Min: 278 Max: 280 Media: 278 Busca Local Min: 277
+Rodrigo - Min: 277 Max: 279 Media: 278 Busca Local Min: 277
+Algoritmo3 - Min: 279 Max: 279 Media: 279 Busca Local Min: 279
+
+Instancias\Spd_RF2_1000_1143_6115.txt
+AndersonV4 - Min: 279 Max: 282 Media: 280 Busca Local Min: 279
+Rodrigo - Min: 279 Max: 282 Media: 280 Busca Local Min: 279
+Algoritmo3 - Min: 280 Max: 280 Media: 280 Busca Local Min: 280
+
+Instancias\Spd_RF2_1000_1143_6123.txt
+AndersonV4 - Min: 274 Max: 277 Media: 275 Busca Local Min: 274
+Rodrigo - Min: 275 Max: 276 Media: 275 Busca Local Min: 275
+Algoritmo3 - Min: 276 Max: 276 Media: 276 Busca Local Min: 276
+
+Instancias\Spd_RF2_1000_1191_6131.txt
+AndersonV4 - Min: 254 Max: 261 Media: 258 Busca Local Min: 254
+Rodrigo - Min: 256 Max: 261 Media: 258 Busca Local Min: 256
+Algoritmo3 - Min: 257 Max: 257 Media: 257 Busca Local Min: 257
+
+Instancias\Spd_RF2_1000_1191_6139.txt
+AndersonV4 - Min: 258 Max: 259 Media: 258 Busca Local Min: 258
+Rodrigo - Min: 258 Max: 261 Media: 259 Busca Local Min: 258
+Algoritmo3 - Min: 259 Max: 259 Media: 259 Busca Local Min: 259
+
+Instancias\Spd_RF2_1000_1191_6147.txt
+AndersonV4 - Min: 258 Max: 260 Media: 259 Busca Local Min: 258
+Rodrigo - Min: 258 Max: 262 Media: 259 Busca Local Min: 258
+Algoritmo3 - Min: 259 Max: 259 Media: 259 Busca Local Min: 259
+
+Instancias\Spd_RF2_1000_1191_6155.txt
+AndersonV4 - Min: 260 Max: 263 Media: 261 Busca Local Min: 260
+Rodrigo - Min: 260 Max: 264 Media: 262 Busca Local Min: 260
+Algoritmo3 - Min: 260 Max: 260 Media: 260 Busca Local Min: 260
+
+Instancias\Spd_RF2_1000_1191_6163.txt
+AndersonV4 - Min: 258 Max: 262 Media: 260 Busca Local Min: 258
+Rodrigo - Min: 260 Max: 264 Media: 261 Busca Local Min: 260
+Algoritmo3 - Min: 262 Max: 262 Media: 262 Busca Local Min: 262
+
+Instancias\Spd_RF2_1000_1239_6171.txt
+AndersonV4 - Min: 239 Max: 243 Media: 240 Busca Local Min: 238
+Rodrigo - Min: 239 Max: 242 Media: 240 Busca Local Min: 239
+Algoritmo3 - Min: 239 Max: 239 Media: 239 Busca Local Min: 238
+
+Instancias\Spd_RF2_1000_1239_6179.txt
+AndersonV4 - Min: 244 Max: 247 Media: 245 Busca Local Min: 244
+Rodrigo - Min: 243 Max: 246 Media: 244 Busca Local Min: 243
+Algoritmo3 - Min: 245 Max: 245 Media: 245 Busca Local Min: 245
+
+Instancias\Spd_RF2_1000_1239_6187.txt
+AndersonV4 - Min: 240 Max: 246 Media: 243 Busca Local Min: 240
+Rodrigo - Min: 242 Max: 245 Media: 243 Busca Local Min: 242
+Algoritmo3 - Min: 243 Max: 243 Media: 243 Busca Local Min: 243
+
+Instancias\Spd_RF2_1000_1239_6195.txt
+AndersonV4 - Min: 247 Max: 249 Media: 247 Busca Local Min: 247
+Rodrigo - Min: 247 Max: 250 Media: 248 Busca Local Min: 247
+Algoritmo3 - Min: 249 Max: 249 Media: 249 Busca Local Min: 249
+
+Instancias\Spd_RF2_1000_1239_6203.txt
+AndersonV4 - Min: 244 Max: 248 Media: 246 Busca Local Min: 244
+Rodrigo - Min: 244 Max: 249 Media: 246 Busca Local Min: 244
+Algoritmo3 - Min: 246 Max: 246 Media: 246 Busca Local Min: 246
+
+Instancias\Spd_RF2_100_114_1811.txt
+AndersonV4 - Min: 27 Max: 27 Media: 27 Busca Local Min: 26
+Rodrigo - Min: 27 Max: 27 Media: 27 Busca Local Min: 26
+Algoritmo3 - Min: 27 Max: 27 Media: 27 Busca Local Min: 26
+
+Instancias\Spd_RF2_100_114_1819.txt
+AndersonV4 - Min: 23 Max: 25 Media: 24 Busca Local Min: 23
+Rodrigo - Min: 24 Max: 25 Media: 24 Busca Local Min: 24
+Algoritmo3 - Min: 24 Max: 24 Media: 24 Busca Local Min: 24
+
+Instancias\Spd_RF2_100_114_1827.txt
+AndersonV4 - Min: 23 Max: 23 Media: 23 Busca Local Min: 23
+Rodrigo - Min: 23 Max: 24 Media: 23 Busca Local Min: 23
+Algoritmo3 - Min: 23 Max: 23 Media: 23 Busca Local Min: 23
+
+Instancias\Spd_RF2_100_114_1835.txt
+AndersonV4 - Min: 23 Max: 23 Media: 23 Busca Local Min: 23
+Rodrigo - Min: 23 Max: 23 Media: 23 Busca Local Min: 23
+Algoritmo3 - Min: 23 Max: 23 Media: 23 Busca Local Min: 23
+
+Instancias\Spd_RF2_100_114_1843.txt
+AndersonV4 - Min: 25 Max: 25 Media: 25 Busca Local Min: 25
+Rodrigo - Min: 25 Max: 25 Media: 25 Busca Local Min: 25
+Algoritmo3 - Min: 25 Max: 25 Media: 25 Busca Local Min: 25
+
+Instancias\Spd_RF2_100_129_1851.txt
+AndersonV4 - Min: 18 Max: 21 Media: 19 Busca Local Min: 18
+Rodrigo - Min: 18 Max: 21 Media: 19 Busca Local Min: 18
+Algoritmo3 - Min: 18 Max: 18 Media: 18 Busca Local Min: 18
+
+Instancias\Spd_RF2_100_129_1859.txt
+AndersonV4 - Min: 18 Max: 21 Media: 19 Busca Local Min: 18
+Rodrigo - Min: 18 Max: 20 Media: 19 Busca Local Min: 18
+Algoritmo3 - Min: 18 Max: 18 Media: 18 Busca Local Min: 18
+
+Instancias\Spd_RF2_100_129_1867.txt
+AndersonV4 - Min: 18 Max: 20 Media: 18 Busca Local Min: 18
+Rodrigo - Min: 18 Max: 20 Media: 18 Busca Local Min: 18
+Algoritmo3 - Min: 18 Max: 18 Media: 18 Busca Local Min: 18
+
+Instancias\Spd_RF2_100_129_1875.txt
+AndersonV4 - Min: 17 Max: 19 Media: 18 Busca Local Min: 17
+Rodrigo - Min: 17 Max: 19 Media: 18 Busca Local Min: 17
+Algoritmo3 - Min: 17 Max: 17 Media: 17 Busca Local Min: 17
+
+Instancias\Spd_RF2_100_129_1883.txt
+AndersonV4 - Min: 17 Max: 19 Media: 17 Busca Local Min: 16
+Rodrigo - Min: 15 Max: 19 Media: 17 Busca Local Min: 15
+Algoritmo3 - Min: 15 Max: 15 Media: 15 Busca Local Min: 15
+
+Instancias\Spd_RF2_100_144_1891.txt
+AndersonV4 - Min: 14 Max: 18 Media: 16 Busca Local Min: 14
+Rodrigo - Min: 14 Max: 18 Media: 16 Busca Local Min: 14
+Algoritmo3 - Min: 15 Max: 15 Media: 15 Busca Local Min: 14
+
+Instancias\Spd_RF2_100_144_1899.txt
+AndersonV4 - Min: 13 Max: 16 Media: 14 Busca Local Min: 13
+Rodrigo - Min: 14 Max: 15 Media: 14 Busca Local Min: 14
+Algoritmo3 - Min: 12 Max: 12 Media: 12 Busca Local Min: 12
+
+Instancias\Spd_RF2_100_144_1907.txt
+AndersonV4 - Min: 16 Max: 19 Media: 16 Busca Local Min: 16
+Rodrigo - Min: 15 Max: 20 Media: 17 Busca Local Min: 15
+Algoritmo3 - Min: 15 Max: 15 Media: 15 Busca Local Min: 15
+
+Instancias\Spd_RF2_100_144_1915.txt
+AndersonV4 - Min: 12 Max: 15 Media: 13 Busca Local Min: 11
+Rodrigo - Min: 11 Max: 15 Media: 13 Busca Local Min: 11
+Algoritmo3 - Min: 11 Max: 11 Media: 11 Busca Local Min: 10
+
+Instancias\Spd_RF2_100_144_1923.txt
+AndersonV4 - Min: 14 Max: 17 Media: 15 Busca Local Min: 14
+Rodrigo - Min: 14 Max: 18 Media: 15 Busca Local Min: 14
+Algoritmo3 - Min: 15 Max: 15 Media: 15 Busca Local Min: 15
+
+Instancias\Spd_RF2_100_159_1931.txt
+AndersonV4 - Min: 11 Max: 15 Media: 12 Busca Local Min: 11
+Rodrigo - Min: 11 Max: 14 Media: 12 Busca Local Min: 11
+Algoritmo3 - Min: 11 Max: 11 Media: 11 Busca Local Min: 11
+
+Instancias\Spd_RF2_100_159_1939.txt
+AndersonV4 - Min: 13 Max: 15 Media: 13 Busca Local Min: 12
+Rodrigo - Min: 12 Max: 15 Media: 12 Busca Local Min: 12
+Algoritmo3 - Min: 11 Max: 11 Media: 11 Busca Local Min: 11
+
+Instancias\Spd_RF2_100_159_1947.txt
+AndersonV4 - Min: 9 Max: 13 Media: 11 Busca Local Min: 9
+Rodrigo - Min: 10 Max: 13 Media: 11 Busca Local Min: 9
+Algoritmo3 - Min: 8 Max: 8 Media: 8 Busca Local Min: 8
+
+Instancias\Spd_RF2_100_159_1955.txt
+AndersonV4 - Min: 10 Max: 14 Media: 12 Busca Local Min: 10
+Rodrigo - Min: 11 Max: 14 Media: 12 Busca Local Min: 11
+Algoritmo3 - Min: 9 Max: 9 Media: 9 Busca Local Min: 9
+
+Instancias\Spd_RF2_100_159_1963.txt
+AndersonV4 - Min: 13 Max: 16 Media: 14 Busca Local Min: 12
+Rodrigo - Min: 13 Max: 15 Media: 14 Busca Local Min: 13
+Algoritmo3 - Min: 12 Max: 12 Media: 12 Busca Local Min: 12
+
+Instancias\Spd_RF2_100_174_1971.txt
+AndersonV4 - Min: 9 Max: 14 Media: 11 Busca Local Min: 8
+Rodrigo - Min: 9 Max: 14 Media: 11 Busca Local Min: 8
+Algoritmo3 - Min: 8 Max: 8 Media: 8 Busca Local Min: 7
+
+Instancias\Spd_RF2_100_174_1979.txt
+AndersonV4 - Min: 10 Max: 15 Media: 11 Busca Local Min: 10
+Rodrigo - Min: 11 Max: 13 Media: 12 Busca Local Min: 11
+Algoritmo3 - Min: 9 Max: 9 Media: 9 Busca Local Min: 9
+
+Instancias\Spd_RF2_100_174_1987.txt
+AndersonV4 - Min: 11 Max: 15 Media: 13 Busca Local Min: 11
+Rodrigo - Min: 11 Max: 15 Media: 13 Busca Local Min: 11
+Algoritmo3 - Min: 11 Max: 11 Media: 11 Busca Local Min: 11
+
+Instancias\Spd_RF2_100_174_1995.txt
+AndersonV4 - Min: 9 Max: 14 Media: 11 Busca Local Min: 9
+Rodrigo - Min: 9 Max: 14 Media: 11 Busca Local Min: 9
+Algoritmo3 - Min: 9 Max: 9 Media: 9 Busca Local Min: 8
+
+Instancias\Spd_RF2_100_174_2003.txt
+AndersonV4 - Min: 9 Max: 12 Media: 10 Busca Local Min: 9
+Rodrigo - Min: 8 Max: 12 Media: 10 Busca Local Min: 8
+Algoritmo3 - Min: 7 Max: 7 Media: 7 Busca Local Min: 7
+
+Instancias\Spd_RF2_120_136_2211.txt
+AndersonV4 - Min: 31 Max: 31 Media: 31 Busca Local Min: 31
+Rodrigo - Min: 31 Max: 31 Media: 31 Busca Local Min: 31
+Algoritmo3 - Min: 31 Max: 31 Media: 31 Busca Local Min: 31
+
+Instancias\Spd_RF2_120_136_2219.txt
+AndersonV4 - Min: 29 Max: 30 Media: 29 Busca Local Min: 29
+Rodrigo - Min: 29 Max: 30 Media: 29 Busca Local Min: 29
+Algoritmo3 - Min: 29 Max: 29 Media: 29 Busca Local Min: 29
+
+Instancias\Spd_RF2_120_136_2227.txt
+AndersonV4 - Min: 30 Max: 30 Media: 30 Busca Local Min: 30
+Rodrigo - Min: 30 Max: 30 Media: 30 Busca Local Min: 30
+Algoritmo3 - Min: 30 Max: 30 Media: 30 Busca Local Min: 30
+
+Instancias\Spd_RF2_120_136_2235.txt
+AndersonV4 - Min: 30 Max: 31 Media: 30 Busca Local Min: 30
+Rodrigo - Min: 30 Max: 31 Media: 30 Busca Local Min: 30
+Algoritmo3 - Min: 30 Max: 30 Media: 30 Busca Local Min: 30
+
+Instancias\Spd_RF2_120_136_2243.txt
+AndersonV4 - Min: 31 Max: 33 Media: 31 Busca Local Min: 31
+Rodrigo - Min: 31 Max: 32 Media: 31 Busca Local Min: 31
+Algoritmo3 - Min: 31 Max: 31 Media: 31 Busca Local Min: 31
+
+Instancias\Spd_RF2_120_152_2251.txt
+AndersonV4 - Min: 21 Max: 24 Media: 22 Busca Local Min: 21
+Rodrigo - Min: 22 Max: 24 Media: 22 Busca Local Min: 22
+Algoritmo3 - Min: 22 Max: 22 Media: 22 Busca Local Min: 22
+
+Instancias\Spd_RF2_120_152_2259.txt
+AndersonV4 - Min: 23 Max: 25 Media: 24 Busca Local Min: 23
+Rodrigo - Min: 23 Max: 26 Media: 24 Busca Local Min: 23
+Algoritmo3 - Min: 23 Max: 23 Media: 23 Busca Local Min: 23
+
+Instancias\Spd_RF2_120_152_2267.txt
+AndersonV4 - Min: 24 Max: 27 Media: 25 Busca Local Min: 24
+Rodrigo - Min: 23 Max: 25 Media: 24 Busca Local Min: 23
+Algoritmo3 - Min: 24 Max: 24 Media: 24 Busca Local Min: 24
+
+Instancias\Spd_RF2_120_152_2275.txt
+AndersonV4 - Min: 23 Max: 26 Media: 23 Busca Local Min: 22
+Rodrigo - Min: 23 Max: 25 Media: 23 Busca Local Min: 22
+Algoritmo3 - Min: 23 Max: 23 Media: 23 Busca Local Min: 22
+
+Instancias\Spd_RF2_120_152_2283.txt
+AndersonV4 - Min: 24 Max: 26 Media: 24 Busca Local Min: 24
+Rodrigo - Min: 24 Max: 25 Media: 24 Busca Local Min: 24
+Algoritmo3 - Min: 24 Max: 24 Media: 24 Busca Local Min: 24
+
+Instancias\Spd_RF2_120_169_2291.txt
+AndersonV4 - Min: 19 Max: 22 Media: 20 Busca Local Min: 19
+Rodrigo - Min: 18 Max: 22 Media: 20 Busca Local Min: 18
+Algoritmo3 - Min: 19 Max: 19 Media: 19 Busca Local Min: 19
+
+Instancias\Spd_RF2_120_169_2299.txt
+AndersonV4 - Min: 18 Max: 22 Media: 19 Busca Local Min: 18
+Rodrigo - Min: 18 Max: 21 Media: 19 Busca Local Min: 18
+Algoritmo3 - Min: 16 Max: 16 Media: 16 Busca Local Min: 16
+
+Instancias\Spd_RF2_120_169_2307.txt
+AndersonV4 - Min: 15 Max: 21 Media: 17 Busca Local Min: 15
+Rodrigo - Min: 16 Max: 19 Media: 17 Busca Local Min: 16
+Algoritmo3 - Min: 17 Max: 17 Media: 17 Busca Local Min: 17
+
+Instancias\Spd_RF2_120_169_2315.txt
+AndersonV4 - Min: 18 Max: 21 Media: 19 Busca Local Min: 18
+Rodrigo - Min: 19 Max: 22 Media: 20 Busca Local Min: 19
+Algoritmo3 - Min: 19 Max: 19 Media: 19 Busca Local Min: 19
+
+Instancias\Spd_RF2_120_169_2323.txt
+AndersonV4 - Min: 19 Max: 22 Media: 20 Busca Local Min: 19
+Rodrigo - Min: 19 Max: 22 Media: 20 Busca Local Min: 19
+Algoritmo3 - Min: 17 Max: 17 Media: 17 Busca Local Min: 17
+
+Instancias\Spd_RF2_120_185_2331.txt
+AndersonV4 - Min: 15 Max: 19 Media: 16 Busca Local Min: 14
+Rodrigo - Min: 14 Max: 16 Media: 15 Busca Local Min: 13
+Algoritmo3 - Min: 14 Max: 14 Media: 14 Busca Local Min: 14
+
+Instancias\Spd_RF2_120_185_2339.txt
+AndersonV4 - Min: 14 Max: 18 Media: 16 Busca Local Min: 14
+Rodrigo - Min: 15 Max: 18 Media: 16 Busca Local Min: 15
+Algoritmo3 - Min: 13 Max: 13 Media: 13 Busca Local Min: 13
+
+Instancias\Spd_RF2_120_185_2347.txt
+AndersonV4 - Min: 15 Max: 19 Media: 17 Busca Local Min: 15
+Rodrigo - Min: 17 Max: 19 Media: 17 Busca Local Min: 16
+Algoritmo3 - Min: 14 Max: 14 Media: 14 Busca Local Min: 14
+
+Instancias\Spd_RF2_120_185_2355.txt
+AndersonV4 - Min: 13 Max: 16 Media: 14 Busca Local Min: 13
+Rodrigo - Min: 13 Max: 16 Media: 14 Busca Local Min: 13
+Algoritmo3 - Min: 11 Max: 11 Media: 11 Busca Local Min: 11
+
+Instancias\Spd_RF2_120_185_2363.txt
+AndersonV4 - Min: 14 Max: 17 Media: 15 Busca Local Min: 14
+Rodrigo - Min: 14 Max: 17 Media: 15 Busca Local Min: 14
+Algoritmo3 - Min: 13 Max: 13 Media: 13 Busca Local Min: 13
+
+Instancias\Spd_RF2_120_202_2371.txt
+AndersonV4 - Min: 12 Max: 15 Media: 13 Busca Local Min: 11
+Rodrigo - Min: 10 Max: 16 Media: 13 Busca Local Min: 10
+Algoritmo3 - Min: 11 Max: 11 Media: 11 Busca Local Min: 10
+
+Instancias\Spd_RF2_120_202_2379.txt
+AndersonV4 - Min: 15 Max: 19 Media: 16 Busca Local Min: 15
+Rodrigo - Min: 15 Max: 20 Media: 17 Busca Local Min: 15
+Algoritmo3 - Min: 15 Max: 15 Media: 15 Busca Local Min: 15
+
+Instancias\Spd_RF2_120_202_2387.txt
+AndersonV4 - Min: 12 Max: 18 Media: 14 Busca Local Min: 12
+Rodrigo - Min: 12 Max: 17 Media: 14 Busca Local Min: 12
+Algoritmo3 - Min: 11 Max: 11 Media: 11 Busca Local Min: 11
+
+Instancias\Spd_RF2_120_202_2395.txt
+AndersonV4 - Min: 13 Max: 15 Media: 13 Busca Local Min: 12
+Rodrigo - Min: 13 Max: 15 Media: 14 Busca Local Min: 12
+Algoritmo3 - Min: 9 Max: 9 Media: 9 Busca Local Min: 9
+
+Instancias\Spd_RF2_120_202_2403.txt
+AndersonV4 - Min: 14 Max: 18 Media: 15 Busca Local Min: 13
+Rodrigo - Min: 14 Max: 18 Media: 16 Busca Local Min: 13
+Algoritmo3 - Min: 10 Max: 10 Media: 10 Busca Local Min: 10
+
+Instancias\Spd_RF2_140_157_2611.txt
+AndersonV4 - Min: 35 Max: 35 Media: 35 Busca Local Min: 35
+Rodrigo - Min: 35 Max: 36 Media: 35 Busca Local Min: 35
+Algoritmo3 - Min: 36 Max: 36 Media: 36 Busca Local Min: 36
+
+Instancias\Spd_RF2_140_157_2619.txt
+AndersonV4 - Min: 34 Max: 35 Media: 34 Busca Local Min: 34
+Rodrigo - Min: 34 Max: 35 Media: 34 Busca Local Min: 34
+Algoritmo3 - Min: 34 Max: 34 Media: 34 Busca Local Min: 34
+
+Instancias\Spd_RF2_140_157_2627.txt
+AndersonV4 - Min: 35 Max: 37 Media: 35 Busca Local Min: 35
+Rodrigo - Min: 35 Max: 37 Media: 35 Busca Local Min: 35
+Algoritmo3 - Min: 36 Max: 36 Media: 36 Busca Local Min: 36
+
+Instancias\Spd_RF2_140_157_2635.txt
+AndersonV4 - Min: 34 Max: 35 Media: 34 Busca Local Min: 34
+Rodrigo - Min: 34 Max: 35 Media: 34 Busca Local Min: 34
+Algoritmo3 - Min: 34 Max: 34 Media: 34 Busca Local Min: 34
+
+Instancias\Spd_RF2_140_157_2643.txt
+AndersonV4 - Min: 34 Max: 35 Media: 34 Busca Local Min: 34
+Rodrigo - Min: 34 Max: 35 Media: 34 Busca Local Min: 34
+Algoritmo3 - Min: 34 Max: 34 Media: 34 Busca Local Min: 34
+
+Instancias\Spd_RF2_140_175_2651.txt
+AndersonV4 - Min: 25 Max: 28 Media: 27 Busca Local Min: 25
+Rodrigo - Min: 26 Max: 28 Media: 26 Busca Local Min: 25
+Algoritmo3 - Min: 25 Max: 25 Media: 25 Busca Local Min: 25
+
+Instancias\Spd_RF2_140_175_2659.txt
+AndersonV4 - Min: 29 Max: 31 Media: 30 Busca Local Min: 29
+Rodrigo - Min: 29 Max: 31 Media: 30 Busca Local Min: 29
+Algoritmo3 - Min: 30 Max: 30 Media: 30 Busca Local Min: 30
+
+Instancias\Spd_RF2_140_175_2667.txt
+AndersonV4 - Min: 26 Max: 29 Media: 28 Busca Local Min: 26
+Rodrigo - Min: 27 Max: 29 Media: 27 Busca Local Min: 27
+Algoritmo3 - Min: 26 Max: 26 Media: 26 Busca Local Min: 26
+
+Instancias\Spd_RF2_140_175_2675.txt
+AndersonV4 - Min: 25 Max: 29 Media: 27 Busca Local Min: 25
+Rodrigo - Min: 26 Max: 28 Media: 27 Busca Local Min: 26
+Algoritmo3 - Min: 26 Max: 26 Media: 26 Busca Local Min: 26
+
+Instancias\Spd_RF2_140_175_2683.txt
+AndersonV4 - Min: 29 Max: 31 Media: 30 Busca Local Min: 29
+Rodrigo - Min: 29 Max: 33 Media: 30 Busca Local Min: 29
+Algoritmo3 - Min: 29 Max: 29 Media: 29 Busca Local Min: 29
+
+Instancias\Spd_RF2_140_193_2691.txt
+AndersonV4 - Min: 20 Max: 24 Media: 22 Busca Local Min: 20
+Rodrigo - Min: 21 Max: 23 Media: 21 Busca Local Min: 21
+Algoritmo3 - Min: 20 Max: 20 Media: 20 Busca Local Min: 20
+
+Instancias\Spd_RF2_140_193_2699.txt
+AndersonV4 - Min: 21 Max: 25 Media: 22 Busca Local Min: 20
+Rodrigo - Min: 22 Max: 25 Media: 23 Busca Local Min: 20
+Algoritmo3 - Min: 21 Max: 21 Media: 21 Busca Local Min: 21
+
+Instancias\Spd_RF2_140_193_2707.txt
+AndersonV4 - Min: 21 Max: 25 Media: 22 Busca Local Min: 21
+Rodrigo - Min: 21 Max: 24 Media: 22 Busca Local Min: 21
+Algoritmo3 - Min: 21 Max: 21 Media: 21 Busca Local Min: 21
+
+Instancias\Spd_RF2_140_193_2715.txt
+AndersonV4 - Min: 23 Max: 25 Media: 24 Busca Local Min: 23
+Rodrigo - Min: 23 Max: 27 Media: 24 Busca Local Min: 23
+Algoritmo3 - Min: 22 Max: 22 Media: 22 Busca Local Min: 22
+
+Instancias\Spd_RF2_140_193_2723.txt
+AndersonV4 - Min: 21 Max: 25 Media: 23 Busca Local Min: 21
+Rodrigo - Min: 23 Max: 26 Media: 24 Busca Local Min: 23
+Algoritmo3 - Min: 21 Max: 21 Media: 21 Busca Local Min: 21
+
+Instancias\Spd_RF2_140_211_2731.txt
+AndersonV4 - Min: 18 Max: 22 Media: 20 Busca Local Min: 18
+Rodrigo - Min: 18 Max: 23 Media: 20 Busca Local Min: 18
+Algoritmo3 - Min: 16 Max: 16 Media: 16 Busca Local Min: 16
+
+Instancias\Spd_RF2_140_211_2739.txt
+AndersonV4 - Min: 21 Max: 24 Media: 22 Busca Local Min: 20
+Rodrigo - Min: 21 Max: 24 Media: 22 Busca Local Min: 20
+Algoritmo3 - Min: 21 Max: 21 Media: 21 Busca Local Min: 21
+
+Instancias\Spd_RF2_140_211_2747.txt
+AndersonV4 - Min: 20 Max: 24 Media: 21 Busca Local Min: 20
+Rodrigo - Min: 20 Max: 24 Media: 22 Busca Local Min: 20
+Algoritmo3 - Min: 17 Max: 17 Media: 17 Busca Local Min: 17
+
+Instancias\Spd_RF2_140_211_2755.txt
+AndersonV4 - Min: 17 Max: 22 Media: 18 Busca Local Min: 17
+Rodrigo - Min: 18 Max: 21 Media: 19 Busca Local Min: 18
+Algoritmo3 - Min: 16 Max: 16 Media: 16 Busca Local Min: 16
+
+Instancias\Spd_RF2_140_211_2763.txt
+AndersonV4 - Min: 19 Max: 21 Media: 19 Busca Local Min: 18
+Rodrigo - Min: 18 Max: 22 Media: 19 Busca Local Min: 18
+Algoritmo3 - Min: 17 Max: 17 Media: 17 Busca Local Min: 17
+
+Instancias\Spd_RF2_140_229_2771.txt
+AndersonV4 - Min: 14 Max: 20 Media: 16 Busca Local Min: 13
+Rodrigo - Min: 14 Max: 20 Media: 17 Busca Local Min: 14
+Algoritmo3 - Min: 13 Max: 13 Media: 13 Busca Local Min: 13
+
+Instancias\Spd_RF2_140_229_2779.txt
+AndersonV4 - Min: 15 Max: 19 Media: 17 Busca Local Min: 15
+Rodrigo - Min: 15 Max: 19 Media: 16 Busca Local Min: 15
+Algoritmo3 - Min: 13 Max: 13 Media: 13 Busca Local Min: 13
+
+Instancias\Spd_RF2_140_229_2787.txt
+AndersonV4 - Min: 17 Max: 21 Media: 18 Busca Local Min: 16
+Rodrigo - Min: 15 Max: 20 Media: 18 Busca Local Min: 15
+Algoritmo3 - Min: 14 Max: 14 Media: 14 Busca Local Min: 14
+
+Instancias\Spd_RF2_140_229_2795.txt
+AndersonV4 - Min: 16 Max: 19 Media: 17 Busca Local Min: 15
+Rodrigo - Min: 16 Max: 17 Media: 16 Busca Local Min: 16
+Algoritmo3 - Min: 16 Max: 16 Media: 16 Busca Local Min: 15
+
+Instancias\Spd_RF2_140_229_2803.txt
+AndersonV4 - Min: 17 Max: 21 Media: 18 Busca Local Min: 16
+Rodrigo - Min: 17 Max: 19 Media: 18 Busca Local Min: 16
+Algoritmo3 - Min: 16 Max: 16 Media: 16 Busca Local Min: 16
+
+Instancias\Spd_RF2_160_179_3011.txt
+AndersonV4 - Min: 39 Max: 41 Media: 39 Busca Local Min: 39
+Rodrigo - Min: 39 Max: 40 Media: 39 Busca Local Min: 39
+Algoritmo3 - Min: 40 Max: 40 Media: 40 Busca Local Min: 40
+
+Instancias\Spd_RF2_160_179_3019.txt
+AndersonV4 - Min: 40 Max: 41 Media: 40 Busca Local Min: 40
+Rodrigo - Min: 40 Max: 41 Media: 40 Busca Local Min: 40
+Algoritmo3 - Min: 40 Max: 40 Media: 40 Busca Local Min: 40
+
+Instancias\Spd_RF2_160_179_3027.txt
+AndersonV4 - Min: 43 Max: 44 Media: 43 Busca Local Min: 43
+Rodrigo - Min: 43 Max: 43 Media: 43 Busca Local Min: 43
+Algoritmo3 - Min: 43 Max: 43 Media: 43 Busca Local Min: 43
+
+Instancias\Spd_RF2_160_179_3035.txt
+AndersonV4 - Min: 40 Max: 42 Media: 41 Busca Local Min: 40
+Rodrigo - Min: 40 Max: 43 Media: 41 Busca Local Min: 40
+Algoritmo3 - Min: 40 Max: 40 Media: 40 Busca Local Min: 40
+
+Instancias\Spd_RF2_160_179_3043.txt
+AndersonV4 - Min: 40 Max: 42 Media: 40 Busca Local Min: 40
+Rodrigo - Min: 40 Max: 42 Media: 41 Busca Local Min: 40
+Algoritmo3 - Min: 41 Max: 41 Media: 41 Busca Local Min: 41
+
+Instancias\Spd_RF2_160_198_3051.txt
+AndersonV4 - Min: 33 Max: 36 Media: 34 Busca Local Min: 33
+Rodrigo - Min: 34 Max: 36 Media: 34 Busca Local Min: 34
+Algoritmo3 - Min: 35 Max: 35 Media: 35 Busca Local Min: 35
+
+Instancias\Spd_RF2_160_198_3059.txt
+AndersonV4 - Min: 32 Max: 35 Media: 33 Busca Local Min: 32
+Rodrigo - Min: 32 Max: 34 Media: 32 Busca Local Min: 32
+Algoritmo3 - Min: 30 Max: 30 Media: 30 Busca Local Min: 30
+
+Instancias\Spd_RF2_160_198_3067.txt
+AndersonV4 - Min: 33 Max: 35 Media: 33 Busca Local Min: 33
+Rodrigo - Min: 33 Max: 34 Media: 33 Busca Local Min: 33
+Algoritmo3 - Min: 33 Max: 33 Media: 33 Busca Local Min: 33
+
+Instancias\Spd_RF2_160_198_3075.txt
+AndersonV4 - Min: 32 Max: 34 Media: 33 Busca Local Min: 32
+Rodrigo - Min: 32 Max: 35 Media: 33 Busca Local Min: 32
+Algoritmo3 - Min: 32 Max: 32 Media: 32 Busca Local Min: 32
+
+Instancias\Spd_RF2_160_198_3083.txt
+AndersonV4 - Min: 33 Max: 36 Media: 34 Busca Local Min: 33
+Rodrigo - Min: 33 Max: 35 Media: 34 Busca Local Min: 33
+Algoritmo3 - Min: 34 Max: 34 Media: 34 Busca Local Min: 33
+
+Instancias\Spd_RF2_160_218_3091.txt
+AndersonV4 - Min: 26 Max: 28 Media: 27 Busca Local Min: 26
+Rodrigo - Min: 25 Max: 29 Media: 27 Busca Local Min: 25
+Algoritmo3 - Min: 24 Max: 24 Media: 24 Busca Local Min: 24
+
+Instancias\Spd_RF2_160_218_3099.txt
+AndersonV4 - Min: 28 Max: 32 Media: 29 Busca Local Min: 27
+Rodrigo - Min: 29 Max: 32 Media: 30 Busca Local Min: 29
+Algoritmo3 - Min: 27 Max: 27 Media: 27 Busca Local Min: 27
+
+Instancias\Spd_RF2_160_218_3107.txt
+AndersonV4 - Min: 25 Max: 29 Media: 27 Busca Local Min: 25
+Rodrigo - Min: 24 Max: 27 Media: 25 Busca Local Min: 23
+Algoritmo3 - Min: 24 Max: 24 Media: 24 Busca Local Min: 24
+
+Instancias\Spd_RF2_160_218_3115.txt
+AndersonV4 - Min: 24 Max: 29 Media: 27 Busca Local Min: 24
+Rodrigo - Min: 25 Max: 28 Media: 26 Busca Local Min: 25
+Algoritmo3 - Min: 26 Max: 26 Media: 26 Busca Local Min: 26
+
+Instancias\Spd_RF2_160_218_3123.txt
+AndersonV4 - Min: 27 Max: 30 Media: 28 Busca Local Min: 27
+Rodrigo - Min: 26 Max: 30 Media: 28 Busca Local Min: 26
+Algoritmo3 - Min: 27 Max: 27 Media: 27 Busca Local Min: 27
+
+Instancias\Spd_RF2_160_237_3131.txt
+AndersonV4 - Min: 24 Max: 26 Media: 25 Busca Local Min: 24
+Rodrigo - Min: 24 Max: 28 Media: 25 Busca Local Min: 24
+Algoritmo3 - Min: 24 Max: 24 Media: 24 Busca Local Min: 24
+
+Instancias\Spd_RF2_160_237_3139.txt
+AndersonV4 - Min: 20 Max: 23 Media: 21 Busca Local Min: 20
+Rodrigo - Min: 21 Max: 25 Media: 22 Busca Local Min: 21
+Algoritmo3 - Min: 20 Max: 20 Media: 20 Busca Local Min: 19
+
+Instancias\Spd_RF2_160_237_3147.txt
+AndersonV4 - Min: 22 Max: 26 Media: 23 Busca Local Min: 22
+Rodrigo - Min: 23 Max: 27 Media: 24 Busca Local Min: 22
+Algoritmo3 - Min: 21 Max: 21 Media: 21 Busca Local Min: 21
+
+Instancias\Spd_RF2_160_237_3155.txt
+AndersonV4 - Min: 22 Max: 24 Media: 22 Busca Local Min: 21
+Rodrigo - Min: 21 Max: 25 Media: 22 Busca Local Min: 21
+Algoritmo3 - Min: 21 Max: 21 Media: 21 Busca Local Min: 21
+
+Instancias\Spd_RF2_160_237_3163.txt
+AndersonV4 - Min: 24 Max: 27 Media: 25 Busca Local Min: 24
+Rodrigo - Min: 23 Max: 26 Media: 24 Busca Local Min: 22
+Algoritmo3 - Min: 20 Max: 20 Media: 20 Busca Local Min: 20
+
+Instancias\Spd_RF2_160_257_3171.txt
+AndersonV4 - Min: 21 Max: 23 Media: 21 Busca Local Min: 21
+Rodrigo - Min: 20 Max: 24 Media: 22 Busca Local Min: 20
+Algoritmo3 - Min: 21 Max: 21 Media: 21 Busca Local Min: 21
+
+Instancias\Spd_RF2_160_257_3179.txt
+AndersonV4 - Min: 18 Max: 22 Media: 20 Busca Local Min: 18
+Rodrigo - Min: 19 Max: 22 Media: 20 Busca Local Min: 17
+Algoritmo3 - Min: 17 Max: 17 Media: 17 Busca Local Min: 16
+
+Instancias\Spd_RF2_160_257_3187.txt
+AndersonV4 - Min: 18 Max: 23 Media: 21 Busca Local Min: 18
+Rodrigo - Min: 18 Max: 23 Media: 20 Busca Local Min: 17
+Algoritmo3 - Min: 17 Max: 17 Media: 17 Busca Local Min: 17
+
+Instancias\Spd_RF2_160_257_3195.txt
+AndersonV4 - Min: 20 Max: 24 Media: 22 Busca Local Min: 20
+Rodrigo - Min: 19 Max: 24 Media: 21 Busca Local Min: 18
+Algoritmo3 - Min: 19 Max: 19 Media: 19 Busca Local Min: 19
+
+Instancias\Spd_RF2_160_257_3203.txt
+AndersonV4 - Min: 19 Max: 23 Media: 21 Busca Local Min: 19
+Rodrigo - Min: 18 Max: 21 Media: 19 Busca Local Min: 17
+Algoritmo3 - Min: 14 Max: 14 Media: 14 Busca Local Min: 14
+
+Instancias\Spd_RF2_180_200_3411.txt
+AndersonV4 - Min: 48 Max: 49 Media: 48 Busca Local Min: 48
+Rodrigo - Min: 47 Max: 49 Media: 48 Busca Local Min: 47
+Algoritmo3 - Min: 48 Max: 48 Media: 48 Busca Local Min: 48
+
+Instancias\Spd_RF2_180_200_3419.txt
+AndersonV4 - Min: 48 Max: 51 Media: 49 Busca Local Min: 48
+Rodrigo - Min: 48 Max: 51 Media: 49 Busca Local Min: 48
+Algoritmo3 - Min: 49 Max: 49 Media: 49 Busca Local Min: 48
+
+Instancias\Spd_RF2_180_200_3427.txt
+AndersonV4 - Min: 47 Max: 49 Media: 48 Busca Local Min: 47
+Rodrigo - Min: 47 Max: 49 Media: 47 Busca Local Min: 47
+Algoritmo3 - Min: 47 Max: 47 Media: 47 Busca Local Min: 47
+
+Instancias\Spd_RF2_180_200_3435.txt
+AndersonV4 - Min: 47 Max: 48 Media: 47 Busca Local Min: 47
+Rodrigo - Min: 47 Max: 48 Media: 47 Busca Local Min: 47
+Algoritmo3 - Min: 47 Max: 47 Media: 47 Busca Local Min: 47
+
+Instancias\Spd_RF2_180_200_3443.txt
+AndersonV4 - Min: 45 Max: 46 Media: 45 Busca Local Min: 45
+Rodrigo - Min: 45 Max: 46 Media: 45 Busca Local Min: 45
+Algoritmo3 - Min: 45 Max: 45 Media: 45 Busca Local Min: 45
+
+Instancias\Spd_RF2_180_221_3451.txt
+AndersonV4 - Min: 35 Max: 37 Media: 36 Busca Local Min: 35
+Rodrigo - Min: 35 Max: 39 Media: 36 Busca Local Min: 35
+Algoritmo3 - Min: 34 Max: 34 Media: 34 Busca Local Min: 34
+
+Instancias\Spd_RF2_180_221_3459.txt
+AndersonV4 - Min: 38 Max: 42 Media: 40 Busca Local Min: 38
+Rodrigo - Min: 39 Max: 42 Media: 40 Busca Local Min: 39
+Algoritmo3 - Min: 39 Max: 39 Media: 39 Busca Local Min: 39
+
+Instancias\Spd_RF2_180_221_3467.txt
+AndersonV4 - Min: 36 Max: 39 Media: 37 Busca Local Min: 36
+Rodrigo - Min: 36 Max: 38 Media: 36 Busca Local Min: 36
+Algoritmo3 - Min: 35 Max: 35 Media: 35 Busca Local Min: 35
+
+Instancias\Spd_RF2_180_221_3475.txt
+AndersonV4 - Min: 37 Max: 41 Media: 38 Busca Local Min: 37
+Rodrigo - Min: 37 Max: 41 Media: 38 Busca Local Min: 37
+Algoritmo3 - Min: 36 Max: 36 Media: 36 Busca Local Min: 36
+
+Instancias\Spd_RF2_180_221_3483.txt
+AndersonV4 - Min: 40 Max: 42 Media: 41 Busca Local Min: 40
+Rodrigo - Min: 40 Max: 42 Media: 40 Busca Local Min: 40
+Algoritmo3 - Min: 40 Max: 40 Media: 40 Busca Local Min: 40
+
+Instancias\Spd_RF2_180_242_3491.txt
+AndersonV4 - Min: 29 Max: 32 Media: 31 Busca Local Min: 29
+Rodrigo - Min: 29 Max: 32 Media: 30 Busca Local Min: 28
+Algoritmo3 - Min: 27 Max: 27 Media: 27 Busca Local Min: 27
+
+Instancias\Spd_RF2_180_242_3499.txt
+AndersonV4 - Min: 29 Max: 33 Media: 31 Busca Local Min: 28
+Rodrigo - Min: 30 Max: 32 Media: 31 Busca Local Min: 29
+Algoritmo3 - Min: 29 Max: 29 Media: 29 Busca Local Min: 29
+
+Instancias\Spd_RF2_180_242_3507.txt
+AndersonV4 - Min: 28 Max: 34 Media: 30 Busca Local Min: 28
+Rodrigo - Min: 29 Max: 33 Media: 31 Busca Local Min: 28
+Algoritmo3 - Min: 27 Max: 27 Media: 27 Busca Local Min: 27
+
+Instancias\Spd_RF2_180_242_3515.txt
+AndersonV4 - Min: 27 Max: 31 Media: 29 Busca Local Min: 27
+Rodrigo - Min: 28 Max: 31 Media: 29 Busca Local Min: 27
+Algoritmo3 - Min: 28 Max: 28 Media: 28 Busca Local Min: 28
+
+Instancias\Spd_RF2_180_242_3523.txt
+AndersonV4 - Min: 28 Max: 31 Media: 29 Busca Local Min: 28
+Rodrigo - Min: 28 Max: 33 Media: 30 Busca Local Min: 27
+Algoritmo3 - Min: 27 Max: 27 Media: 27 Busca Local Min: 27
+
+Instancias\Spd_RF2_180_263_3531.txt
+AndersonV4 - Min: 25 Max: 27 Media: 26 Busca Local Min: 25
+Rodrigo - Min: 23 Max: 28 Media: 26 Busca Local Min: 23
+Algoritmo3 - Min: 22 Max: 22 Media: 22 Busca Local Min: 22
+
+Instancias\Spd_RF2_180_263_3539.txt
+AndersonV4 - Min: 25 Max: 30 Media: 26 Busca Local Min: 24
+Rodrigo - Min: 23 Max: 30 Media: 26 Busca Local Min: 23
+Algoritmo3 - Min: 23 Max: 23 Media: 23 Busca Local Min: 23
+
+Instancias\Spd_RF2_180_263_3547.txt
+AndersonV4 - Min: 26 Max: 29 Media: 27 Busca Local Min: 25
+Rodrigo - Min: 26 Max: 29 Media: 26 Busca Local Min: 24
+Algoritmo3 - Min: 23 Max: 23 Media: 23 Busca Local Min: 23
+
+Instancias\Spd_RF2_180_263_3555.txt
+AndersonV4 - Min: 27 Max: 30 Media: 28 Busca Local Min: 26
+Rodrigo - Min: 25 Max: 29 Media: 27 Busca Local Min: 25
+Algoritmo3 - Min: 25 Max: 25 Media: 25 Busca Local Min: 25
+
+Instancias\Spd_RF2_180_263_3563.txt
+AndersonV4 - Min: 26 Max: 32 Media: 28 Busca Local Min: 26
+Rodrigo - Min: 27 Max: 31 Media: 28 Busca Local Min: 26
+Algoritmo3 - Min: 24 Max: 24 Media: 24 Busca Local Min: 24
+
+Instancias\Spd_RF2_180_284_3571.txt
+AndersonV4 - Min: 22 Max: 26 Media: 24 Busca Local Min: 22
+Rodrigo - Min: 23 Max: 26 Media: 24 Busca Local Min: 23
+Algoritmo3 - Min: 22 Max: 22 Media: 22 Busca Local Min: 22
+
+Instancias\Spd_RF2_180_284_3579.txt
+AndersonV4 - Min: 24 Max: 27 Media: 24 Busca Local Min: 23
+Rodrigo - Min: 22 Max: 26 Media: 24 Busca Local Min: 22
+Algoritmo3 - Min: 21 Max: 21 Media: 21 Busca Local Min: 21
+
+Instancias\Spd_RF2_180_284_3587.txt
+AndersonV4 - Min: 21 Max: 25 Media: 23 Busca Local Min: 21
+Rodrigo - Min: 22 Max: 27 Media: 24 Busca Local Min: 21
+Algoritmo3 - Min: 19 Max: 19 Media: 19 Busca Local Min: 19
+
+Instancias\Spd_RF2_180_284_3595.txt
+AndersonV4 - Min: 23 Max: 29 Media: 26 Busca Local Min: 23
+Rodrigo - Min: 23 Max: 27 Media: 25 Busca Local Min: 23
+Algoritmo3 - Min: 22 Max: 22 Media: 22 Busca Local Min: 22
+
+Instancias\Spd_RF2_180_284_3603.txt
+AndersonV4 - Min: 25 Max: 29 Media: 26 Busca Local Min: 24
+Rodrigo - Min: 24 Max: 29 Media: 26 Busca Local Min: 23
+Algoritmo3 - Min: 23 Max: 23 Media: 23 Busca Local Min: 23
+
+Instancias\Spd_RF2_200_222_3811.txt
+AndersonV4 - Min: 51 Max: 52 Media: 51 Busca Local Min: 51
+Rodrigo - Min: 51 Max: 52 Media: 51 Busca Local Min: 51
+Algoritmo3 - Min: 51 Max: 51 Media: 51 Busca Local Min: 51
+
+Instancias\Spd_RF2_200_222_3819.txt
+AndersonV4 - Min: 52 Max: 54 Media: 52 Busca Local Min: 52
+Rodrigo - Min: 52 Max: 54 Media: 52 Busca Local Min: 52
+Algoritmo3 - Min: 52 Max: 52 Media: 52 Busca Local Min: 52
+
+Instancias\Spd_RF2_200_222_3827.txt
+AndersonV4 - Min: 52 Max: 52 Media: 52 Busca Local Min: 52
+Rodrigo - Min: 51 Max: 52 Media: 51 Busca Local Min: 51
+Algoritmo3 - Min: 51 Max: 51 Media: 51 Busca Local Min: 51
+
+Instancias\Spd_RF2_200_222_3835.txt
+AndersonV4 - Min: 51 Max: 52 Media: 51 Busca Local Min: 51
+Rodrigo - Min: 51 Max: 52 Media: 51 Busca Local Min: 51
+Algoritmo3 - Min: 52 Max: 52 Media: 52 Busca Local Min: 52
+
+Instancias\Spd_RF2_200_222_3843.txt
+AndersonV4 - Min: 52 Max: 53 Media: 52 Busca Local Min: 52
+Rodrigo - Min: 52 Max: 53 Media: 52 Busca Local Min: 52
+Algoritmo3 - Min: 52 Max: 52 Media: 52 Busca Local Min: 52
+
+Instancias\Spd_RF2_200_244_3851.txt
+AndersonV4 - Min: 41 Max: 43 Media: 42 Busca Local Min: 41
+Rodrigo - Min: 41 Max: 43 Media: 42 Busca Local Min: 41
+Algoritmo3 - Min: 41 Max: 41 Media: 41 Busca Local Min: 41
+
+Instancias\Spd_RF2_200_244_3859.txt
+AndersonV4 - Min: 44 Max: 46 Media: 45 Busca Local Min: 44
+Rodrigo - Min: 43 Max: 46 Media: 44 Busca Local Min: 43
+Algoritmo3 - Min: 44 Max: 44 Media: 44 Busca Local Min: 44
+
+Instancias\Spd_RF2_200_244_3867.txt
+AndersonV4 - Min: 39 Max: 43 Media: 41 Busca Local Min: 39
+Rodrigo - Min: 41 Max: 42 Media: 41 Busca Local Min: 40
+Algoritmo3 - Min: 40 Max: 40 Media: 40 Busca Local Min: 40
+
+Instancias\Spd_RF2_200_244_3875.txt
+AndersonV4 - Min: 40 Max: 43 Media: 42 Busca Local Min: 40
+Rodrigo - Min: 39 Max: 45 Media: 41 Busca Local Min: 39
+Algoritmo3 - Min: 40 Max: 40 Media: 40 Busca Local Min: 40
+
+Instancias\Spd_RF2_200_244_3883.txt
+AndersonV4 - Min: 40 Max: 43 Media: 41 Busca Local Min: 40
+Rodrigo - Min: 40 Max: 43 Media: 41 Busca Local Min: 40
+Algoritmo3 - Min: 40 Max: 40 Media: 40 Busca Local Min: 40
+
+Instancias\Spd_RF2_200_267_3891.txt
+AndersonV4 - Min: 34 Max: 37 Media: 35 Busca Local Min: 34
+Rodrigo - Min: 35 Max: 38 Media: 35 Busca Local Min: 34
+Algoritmo3 - Min: 35 Max: 35 Media: 35 Busca Local Min: 35
+

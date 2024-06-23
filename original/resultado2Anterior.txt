@@ -1,0 +1,4 @@
+File Branch_Vertices Time Verification Média_Grau_BV Branch_Vertices2 Time2 Verification2 Média_Grau_BV2 
+Instancias2\Grafo_Exemplo14.txt	 1	 0.0000000000	 True	 7.0000000000	 1	 0.0000000000	 True	 5.0000000000
+Instancias2\Grafo_ExemploDenso.txt	 0	 0.0000000000	 True	 0	 0	 0.0000000000	 True	 0
+Instancias2\Grafo_ExemploSem14.txt	 2	 0.0000000000	 True	 4.0000000000	 2	 0.0000000000	 True	 4.0000000000

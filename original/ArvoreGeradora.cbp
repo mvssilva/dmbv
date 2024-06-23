@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ArvoreGeradora" />
+		<Option makefile="makefile" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ArvoreGeradora" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="Instancias\Spd_RF2_180_200_3419.txt" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ArvoreGeradora" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="Instancias\Spd_RF2_180_242_3515.txt" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/BEP.h" />
+		<Unit filename="include/CEEP.h" />
+		<Unit filename="include/CEP.h" />
+		<Unit filename="include/EEP.h" />
+		<Unit filename="include/Grafo.h" />
+		<Unit filename="include/RBEP.h" />
+		<Unit filename="include/RCEEP.h" />
+		<Unit filename="include/RCEP.h" />
+		<Unit filename="include/REEP.h" />
+		<Unit filename="include/Roleta.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/BEP.cpp" />
+		<Unit filename="src/CEEP.cpp" />
+		<Unit filename="src/CEP.cpp" />
+		<Unit filename="src/EEP.cpp" />
+		<Unit filename="src/Grafo.cpp" />
+		<Unit filename="src/RBEP.cpp" />
+		<Unit filename="src/RCEEP.cpp" />
+		<Unit filename="src/RCEP.cpp" />
+		<Unit filename="src/REEP.cpp" />
+		<Unit filename="src/Roleta.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,6 @@
+/bin
+/obj
+/Teste
+*.o
+*.exe
+resultado.txt

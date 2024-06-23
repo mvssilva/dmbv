@@ -1,0 +1,5 @@
+File Branch_Vertices Time Verification 
+Instancias2\Grafo_Exemplo14.txt
+Instancias2\Grafo_ExemploDenso.txt
+Instancias2\Grafo_ExemploSem14.txt
+Instancias2\Grafo_Teste.txt

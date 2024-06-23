@@ -1,0 +1,478 @@
+# depslib dependency file v1.0
+1666126198 source:d:\testesanderson\arvoregeradoracpp\arvoregeradora\src\andersonv4.cpp
+	"AndersonV4.h"
+
+1666126584 d:\testesanderson\arvoregeradoracpp\arvoregeradora\include\andersonv4.h
+	<set>
+	<vector>
+
+1666126536 source:d:\testesanderson\arvoregeradoracpp\arvoregeradora\main.cpp
+	<iostream>
+	<set>
+	<vector>
+	"AndersonV4.h"
+
+1667436926 source:c:\users\anderson beltr√o\arvoregeradora\main.cpp
+	<iostream>
+	<set>
+	<vector>
+	<time.h>
+	<iomanip>
+	<sstream>
+	<fstream>
+	<string>
+	"AndersonV4.h"
+
+1667437299 c:\users\anderson beltr√o\arvoregeradora\include\andersonv4.h
+	<set>
+	<vector>
+
+1667443819 source:c:\users\anderson beltr√o\arvoregeradora\src\andersonv4.cpp
+	"AndersonV4.h"
+	<algorithm>
+	<iostream>
+
+1667933978 source:d:\testesanderson\arvoregeradora\src\grafo.cpp
+	"Grafo.h"
+
+1667864226 d:\testesanderson\arvoregeradora\include\grafo.h
+	<set>
+	<vector>
+	<string>
+	<stdexcept>
+	<fstream>
+
+1667917396 source:d:\testesanderson\arvoregeradora\main.cpp
+	<iostream>
+	<set>
+	<vector>
+	<time.h>
+	<iomanip>
+	<sstream>
+	<fstream>
+	<string>
+	"AndersonV4.h"
+
+1667917060 d:\testesanderson\arvoregeradora\include\andersonv4.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1667917372 source:d:\testesanderson\arvoregeradora\src\andersonv4.cpp
+	"AndersonV4.h"
+	<algorithm>
+	<iostream>
+
+1667915318 source:d:\testesanderson\arvoregeradora\src\listacontrolada.cpp
+	"ListaControlada.h"
+	<algorithm>
+
+1667915348 d:\testesanderson\arvoregeradora\include\listacontrolada.h
+	<vector>
+
+1668428893 source:c:\users\anderson beltr√o\construtivosmbv-master\main.cpp
+	<iostream>
+	<set>
+	<vector>
+	<time.h>
+	<iomanip>
+	<sstream>
+	<fstream>
+	<string>
+	"AndersonV4.h"
+	"Rodrigo.h"
+
+1667954265 c:\users\anderson beltr√o\construtivosmbv-master\include\andersonv4.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1667954265 c:\users\anderson beltr√o\construtivosmbv-master\include\grafo.h
+	<set>
+	<vector>
+	<string>
+	<stdexcept>
+	<fstream>
+
+1668196503 c:\users\anderson beltr√o\construtivosmbv-master\include\rodrigo.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1667954265 source:c:\users\anderson beltr√o\construtivosmbv-master\src\andersonv4.cpp
+	"AndersonV4.h"
+	<algorithm>
+	<iostream>
+
+1667954265 source:c:\users\anderson beltr√o\construtivosmbv-master\src\grafo.cpp
+	"Grafo.h"
+	<iostream>
+
+1667954265 source:c:\users\anderson beltr√o\construtivosmbv-master\src\listacontrolada.cpp
+	"ListaControlada.h"
+	<algorithm>
+
+1667954265 c:\users\anderson beltr√o\construtivosmbv-master\include\listacontrolada.h
+	<vector>
+
+1668434500 source:c:\users\anderson beltr√o\construtivosmbv-master\src\rodrigo.cpp
+	"Rodrigo.h"
+	<algorithm>
+	<iostream>
+
+1677264464 source:c:\construtivosmbv\main.cpp
+	<iostream>
+	<set>
+	<vector>
+	<time.h>
+	<iomanip>
+	<sstream>
+	<fstream>
+	<string>
+	<iostream>
+	"BEP.h"
+	"RBEP.h"
+	"CEP.h"
+	"RCEP.h"
+	"EEP.h"
+	"REEP.h"
+	"CEEP.h"
+	"RCEEP.h"
+
+1671148328 c:\construtivosmbv\include\andersonv4.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1671055862 c:\construtivosmbv\include\grafo.h
+	<set>
+	<vector>
+	<string>
+	<stdexcept>
+	<fstream>
+
+1670440072 c:\construtivosmbv\include\rodrigo.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1671151796 source:c:\construtivosmbv\src\andersonv4.cpp
+	"AndersonV4.h"
+	<algorithm>
+	<iostream>
+	"Roleta.h"
+
+1671055862 source:c:\construtivosmbv\src\grafo.cpp
+	"Grafo.h"
+	<iostream>
+	<algorithm>
+
+1670525734 source:c:\construtivosmbv\src\rodrigo.cpp
+	"Rodrigo.h"
+	<algorithm>
+	<iostream>
+	"Roleta.h"
+
+1669295750 source:d:\testesanderson\construtivosmbv\main.cpp
+	<iostream>
+	<set>
+	<vector>
+	<time.h>
+	<iomanip>
+	<sstream>
+	<fstream>
+	<string>
+	"AndersonV4.h"
+	"Rodrigo.h"
+
+1669294544 d:\testesanderson\construtivosmbv\include\andersonv4.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1671053164 d:\testesanderson\construtivosmbv\include\grafo.h
+	<set>
+	<vector>
+	<string>
+	<stdexcept>
+	<fstream>
+
+1669294544 d:\testesanderson\construtivosmbv\include\rodrigo.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1669294544 source:d:\testesanderson\construtivosmbv\src\andersonv4.cpp
+	"AndersonV4.h"
+	<algorithm>
+	<iostream>
+
+1671113042 source:d:\testesanderson\construtivosmbv\src\grafo.cpp
+	"Grafo.h"
+	<iostream>
+	<algorithm>
+
+1669294544 D
+
+1669295174 source:d:\testesanderson\construtivosmbv\src\rodrigo.cpp
+	"Rodrigo.h"
+	<algorithm>
+	<iostream>
+
+1669299966 source:c:\users\anderson beltr√o\desktop\construtivosmbv\main.cpp
+	<iostream>
+	<set>
+	<vector>
+	<time.h>
+	<iomanip>
+	<sstream>
+	<fstream>
+	<string>
+	"AndersonV4.h"
+	"Rodrigo.h"
+
+1668893957 c:\users\anderson beltr√o\desktop\construtivosmbv\include\andersonv4.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1667954265 c:\users\anderson beltr√o\desktop\construtivosmbv\include\grafo.h
+	<set>
+	<vector>
+	<string>
+	<stdexcept>
+	<fstream>
+
+1668893960 c:\users\anderson beltr√o\desktop\construtivosmbv\include\rodrigo.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1669406598 source:c:\users\anderson beltr√o\desktop\construtivosmbv\src\andersonv4.cpp
+	"AndersonV4.h"
+	<algorithm>
+	<iostream>
+
+1667954265 source:c:\users\anderson beltr√o\desktop\construtivosmbv\src\grafo.cpp
+	"Grafo.h"
+	<iostream>
+
+1669298477 source:c:\users\anderson beltr√o\desktop\construtivosmbv\src\rodrigo.cpp
+
+1669298477 f845f02d3fde5b4c567ea6e6f05c50af2f33c
+	"Rodrigo.h"
+	<algorithm>
+	<iostream>
+
+1671153525 c:\construtivosmbv\include\roleta.h
+	<vector>
+	<random>
+	<iomanip>
+	"Grafo.h"
+
+1671212592 source:c:\construtivosmbv\src\roleta.cpp
+	"Roleta.h"
+	<iostream>
+
+1670542943 source:c:\construtivosmbv\src\algoritmo3.cpp
+	"Algoritmo3.h"
+	<algorithm>
+	<iostream>
+
+1670528424 c:\construtivosmbv\include\algoritmo3.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1673378709 source:c:\construtivosmbv\src\buscalocal.cpp
+	"BuscaLocal.h"
+	<algorithm>
+	<iostream>
+
+1673376690 c:\construtivosmbv\include\buscalocal.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1676056699 c:\construtivosmbv\include\bep.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1676604066 c:\construtivosmbv\include\rbep.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1676314353 c:\construtivosmbv\include\cep.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1676604802 c:\construtivosmbv\include\rcep.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1676605421 c:\construtivosmbv\include\eep.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1676428352 c:\construtivosmbv\include\reep.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1684342257 source:c:\construtivosmbv\src\bep.cpp
+	"BEP.h"
+	<algorithm>
+	<iostream>
+
+1679022700 source:c:\construtivosmbv\src\cep.cpp
+	"CEP.h"
+	<algorithm>
+	<iostream>
+
+1684342235 source:c:\construtivosmbv\src\eep.cpp
+	"EEP.h"
+	<algorithm>
+	<iostream>
+
+1684342286 source:c:\construtivosmbv\src\rbep.cpp
+	"RBEP.h"
+	<algorithm>
+	<iostream>
+	"Roleta.h"
+
+1679022759 source:c:\construtivosmbv\src\rcep.cpp
+	"RCEP.h"
+	<algorithm>
+	<iostream>
+	"Roleta.h"
+
+1684342311 source:c:\construtivosmbv\src\reep.cpp
+	"REEP.h"
+	<algorithm>
+	<iostream>
+	"Roleta.h"
+
+1671213148 source:d:\testesanderson\construtivosmbv\src\roleta.cpp
+	"Roleta.h"
+	<iostream>
+
+1671213148 d:\testesanderson\construtivosmbv\include\roleta.h
+	<vector>
+	<random>
+	<iomanip>
+	"Grafo.h"
+
+1676638518 source:d:\testesanderson\construtivosmbv\src\bep.cpp
+	"BEP.h"
+	<algorithm>
+	<iostream>
+
+1676638518 d:\testesanderson\construtivosmbv\include\bep.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1676638518 source:d:\testesanderson\construtivosmbv\src\cep.cpp
+	"CEP.h"
+	<algorithm>
+	<iostream>
+
+1676638518 d:\testesanderson\construtivosmbv\include\cep.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1676638518 source:d:\testesanderson\construtivosmbv\src\eep.cpp
+	"EEP.h"
+	<algorithm>
+	<iostream>
+
+1676638518 d:\testesanderson\construtivosmbv\include\eep.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1676638518 source:d:\testesanderson\construtivosmbv\src\rbep.cpp
+	"RBEP.h"
+	<algorithm>
+	<iostream>
+	"Roleta.h"
+
+1676638518 d:\testesanderson\construtivosmbv\include\rbep.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1676638518 source:d:\testesanderson\construtivosmbv\src\rcep.cpp
+	"RCEP.h"
+	<algorithm>
+	<iostream>
+	"Roleta.h"
+
+1676638518 d:\testesanderson\construtivosmbv\include\rcep.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1676638518 source:d:\testesanderson\construtivosmbv\src\reep.cpp
+	"REEP.h"
+	<algorithm>
+	<iostream>
+	"Roleta.h"
+
+1676638518 d:\testesanderson\construtivosmbv\include\reep.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1679022732 source:c:\construtivosmbv\src\ceep.cpp
+	"CEEP.h"
+	<algorithm>
+	<iostream>
+
+1676658237 c:\construtivosmbv\include\ceep.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1679022788 source:c:\construtivosmbv\src\rceep.cpp
+	"RCEEP.h"
+	<algorithm>
+	<iostream>
+	"Roleta.h"
+
+1676661491 c:\construtivosmbv\include\rceep.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
