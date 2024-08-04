@@ -38,13 +38,13 @@ run: main.o
 	@echo "Executando o programa para todos os arquivos de entrada..."
 	@rm -f 
 	@for input_file in $(INPUT_FILES); do \
-	    echo "Executando1 $$input_file ..."; \
+	    echo "Executando $$input_file ..."; \
 	    ./dmbv $$input_file 2 2 0 0 0; \
 	done
 	@echo "Resultados salvos!"
 
 runsimples: main.o
-	./dmbv Instancias/small/Spd_RF2_20_27_235.txt 2 2 0 0 0
+	./dmbv Instancias/small/Spd_RF2_20_27_219.txt 2 2 0 0 0
 
 clean:
 	rm --force main main.o

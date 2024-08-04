@@ -35,16 +35,26 @@ int main(int argc, char *argv[])
     if (argc < 6)
     {
         cout << "Faltam argumentos na chamada: dmbv nome_arquivo parametro_d leitor_instancia." << endl;
-        cout << "Exemplo: dmbv Spd_RF2_80_133_1555.txt 2 2 1 1" << endl;
+        cout << "Exemplo: ./dmbv Instancias/small/Spd_RF2_20_27_219.txt 2 2 0 0 0" << endl;
         return 1;
     }
 
     int d = atoi(argv[2]); // Representa quantos graus o vertice tem que ter para ser um d-brnach. 
     int inst = atoi(argv[3]); // Qual tipo de instancia, variação na funcao de leitura
-    int degreeLocal = atoi(argv[4]); // Classificacao por grau = 0, por pagerank = 1;
-    int degreePertu = atoi(argv[5]); // Classificacao por grau = 0, por pagerank = 1;
-    int modo = atoi(argv[6]); // Seleção de visinhos em "firt best" = 0, por "best" = 1;
+    int selectionMode = atoi(argv[4]); // Seleção de visinhos em "firt best" = 0, por "best" = 1;
+    int orderingSearch = atoi(argv[5]); // Classificacao por grau = 0, por pagerank = 1;
+    int orderingPetu = atoi(argv[6]); // Classificacao por grau = 0, por pagerank = 1;
 
+    /*
+        cn1 = 2 2 0 0 0
+        cn2 = 2 2 0 1 0
+        cn3 = 2 2 1 0 0
+        cn4 = 2 2 1 1 0
+        cn5 = 2 2 0 0 1
+        cn6 = 2 2 0 1 1
+        cn7 = 2 2 1 0 1
+        cn8 = 2 2 1 1 1
+    */
     
     igraph_set_attribute_table(&igraph_cattribute_table);
 
@@ -75,7 +85,7 @@ int main(int argc, char *argv[])
     NumCut = 0;
     numb_OH = 0;
 
-    heuristic.ILS(g,L,OH, pagerank, argv[1], degreeLocal, degreePertu, modo);
+    heuristic.ILS(g,L,OH, pagerank, argv[1], orderingSearch, orderingPetu, selectionMode);
 
     real_time = ((double)clock() - (double)start) / CLOCKS_PER_SEC;
     ofstream RBEPm("output/cn1.csv", std::ios_base::app);

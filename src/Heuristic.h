@@ -45,10 +45,11 @@ class Heuristic
         bool BestNeighbor_by_degree(igraph_t &, igraph_t &, bool *, int *, bool *, int *, igraph_adjlist_t &, vector<float> &pagerank, const std::string &, string &);
         bool BestNeighbor_by_pagerank(igraph_t &, igraph_t &, bool *, int *, bool *, int *, igraph_adjlist_t &, vector<float> &pagerank, const std::string &, string &);
 
-        bool FirstBestNeighbor_1(igraph_t &, igraph_t &, bool *, int *, bool *, int *, igraph_adjlist_t &, vector<float> &pagerank, const std::string &, string &);
-        
         void RemoveEdge(igraph_t &, int, int, int *);
-        void FindEdge(igraph_t &, igraph_t &, bool *, int *, bool *, int *, int, int, int &,int &, igraph_adjlist_t &);
+        
+        void FindEdge_Degree(igraph_t &, igraph_t &, bool *, int *, bool *, int *, int, int, int &,int &, igraph_adjlist_t &);
+        void FindEdge_Pagerank(igraph_t &, igraph_t &, bool *, int *, bool *, int *, int, int, int &,int &, igraph_adjlist_t &, vector<float> &pagerank);
+
         void FindEdgePert_by_degree(igraph_t &, int *, bool *, int *, int, int, int &,int &, bool ** , igraph_adjlist_t &);
         void FindEdgePert_by_pagerank(igraph_t &, int *, bool *, int *, int, int, int &,int &, bool ** , igraph_adjlist_t &, vector<float> &pagerank);
         bool forbMove(int ,int, int, int, bool **, map< pair<int,int> , int > &);

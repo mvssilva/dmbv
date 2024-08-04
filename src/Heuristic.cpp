@@ -182,7 +182,7 @@ std::string extractFileName(const std::string &filePath) {
  * @param OH Ponteiro para array de booleanos do tamanho da quantidade de vertices de g (inicializado como falso).
  */
 void Heuristic::ILS(igraph_t &g, int *L, bool *OH,  vector<float> &pagerank, 
-                    const string &pathcomplete, int local, int pertu, int modo)
+                    const string &pathcomplete, int orderingModeLocal, int orderingModePertu, int selectionMode)
 {
 
     std::string path = extractFileName(pathcomplete);
@@ -196,8 +196,7 @@ void Heuristic::ILS(igraph_t &g, int *L, bool *OH,  vector<float> &pagerank,
 
 
     make_tree(g,L,OH,adjlist); 
-    string step = "0-FBPG-construct";    
-    // saveGraphvizFile(path, step, g);
+    string step = "imagens";    
 
     igraph_vector_t AdjV;
     igraph_vector_init(&AdjV, 0);
@@ -205,10 +204,7 @@ void Heuristic::ILS(igraph_t &g, int *L, bool *OH,  vector<float> &pagerank,
     if(numHV == 0)
         return;
     
-    string step1 = "1-FBPG-localsearch";
-    LocalSearch(g,L,OH,adjlist, pagerank, path, step1, modo, local);
-    string step2 = "2-FBPG-result";
-    // saveGraphvizFile(path, step2, g);
+    LocalSearch(g,L,OH,adjlist, pagerank, path, step, selectionMode, orderingModeLocal);
 
     if(numHV == 0)
         return;
@@ -239,15 +235,21 @@ void Heuristic::ILS(igraph_t &g, int *L, bool *OH,  vector<float> &pagerank,
         if(Time > time_Limit-1)
             break;
 
-        if(!Pertubation_by_pagerank(g, L, OH, visitado, u, v, e_1, e_2, FE, adjlist, pagerank))
-            break;
-
-        else
-        {
-          FE[e_1][e_2] = FE[e_2][e_1] = true;
+        if(orderingModePertu == 0){
+            if(!Pertubation_by_degree(g, L, OH, visitado, u, v, e_1, e_2, FE, adjlist, pagerank))
+                break;
+            else
+                FE[e_1][e_2] = FE[e_2][e_1] = true;
+            
+        }else{
+            if(!Pertubation_by_pagerank(g, L, OH, visitado, u, v, e_1, e_2, FE, adjlist, pagerank))
+                break;
+            else
+                FE[e_1][e_2] = FE[e_2][e_1] = true;
+            
         }
 
-        LocalSearch(g,L,OH,adjlist, pagerank, path, step1);
+        LocalSearch(g,L,OH,adjlist, pagerank, path, step, selectionMode, orderingModeLocal);
 
         if(numHV < numHVbest) //improvement
         {
@@ -296,7 +298,7 @@ void Heuristic::ILS(igraph_t &g, int *L, bool *OH,  vector<float> &pagerank,
 /***************************LOCAL SEARCH*********************************************************************/
 // Victor: Visa aprimorar a árvore inicial obtida através do procedimento make_tree. Seção 2.2.2 do artigo.
 void Heuristic::LocalSearch(igraph_t &G, int *L, bool * OH, igraph_adjlist_t &adjlist, vector<float> &pagerank, 
-                            const std::string &path, string &step, int modo, int local)
+                            const std::string &path, string &step, int selectionMode, int orderingMode)
 {
     igraph_t T1;
     bool improvement, * LH;
@@ -307,22 +309,15 @@ void Heuristic::LocalSearch(igraph_t &G, int *L, bool * OH, igraph_adjlist_t &ad
     LH = new bool [n];
 
     int cont  = 0;
-    string step_local = step +"-"+ to_string(cont);
-    
-    // saveGraphvizFile(path, step_local, G);
     
     do
     {   
-        step_local = step +"-"+ to_string(cont);
-        improvement = Custom_Neighbor(G, T1, LH, L, OH, visitado, adjlist, pagerank, path, step_local, modo, local);
+        improvement = Custom_Neighbor(G, T1, LH, L, OH, visitado, adjlist, pagerank, path, step, selectionMode, orderingMode);
         
         if(improvement)
             igraph_copy(&T, &T1);
 
         cont ++;
-
-        // if(cont == 20)
-        //     break;
 
     }while(improvement);
 
@@ -344,9 +339,9 @@ void Heuristic::LocalSearch(igraph_t &G, int *L, bool * OH, igraph_adjlist_t &ad
     delete []LH;
 }
 
-void orderer_vertex(igraph_t &T, vector< pair<float,int> > S, vector<float> &pagerank, int n, bool *LH, int * L, bool *OH, int & min, int local, int d){
+void orderer_vertex(igraph_t &T, vector< pair<float,int> > &S, vector<float> &pagerank, int n, bool *LH, int * L, bool *OH, int & min, int orderingMode, int d){
 
-    if(local == 0){
+    if(orderingMode == 0){
         for(int i = 0; i < n; i++)
         {
             LH[i] = OH[i];
@@ -372,7 +367,7 @@ void orderer_vertex(igraph_t &T, vector< pair<float,int> > S, vector<float> &pag
 
 
 bool Heuristic::Custom_Neighbor(igraph_t &G, igraph_t &T1, bool *LH, int * L, bool *OH, int *visitado, igraph_adjlist_t &adjlist, 
-                                vector<float> &pagerank, const std::string & path, string &step, int modo, int local)
+                                vector<float> &pagerank, const std::string & path, string &step, int selectionMode, int orderingMode)
 {
     /*** return the first tree with at least one less HV ***/
     bool flag;
@@ -392,7 +387,7 @@ bool Heuristic::Custom_Neighbor(igraph_t &G, igraph_t &T1, bool *LH, int * L, bo
     igraph_copy(&bestT, &T);
     int minAtualDmbv = 0;
     
-    orderer_vertex(T, S, pagerank, n, LH, L, OH, minAtualDmbv, local, d);
+    orderer_vertex(T, S, pagerank, n, LH, L, OH, minAtualDmbv, orderingMode, d);
 
     int qtdInicialDmbv = minAtualDmbv;
     int improvement = 0;
@@ -401,6 +396,7 @@ bool Heuristic::Custom_Neighbor(igraph_t &G, igraph_t &T1, bool *LH, int * L, bo
     for(itS = S.begin(); itS != S.end(); ++itS)
     {   
         v = (*itS).second; 
+        // cout << "dbranch = " << v+1 << endl;
         if(degree(T1, v)+L[v] > d)
         {
             igraph_neighbors(&T1, &AdjV, v, IGRAPH_OUT);
@@ -409,8 +405,13 @@ bool Heuristic::Custom_Neighbor(igraph_t &G, igraph_t &T1, bool *LH, int * L, bo
                 u = igraph_vector_e(&AdjV, j);
                 flag = degree(T1, u)+L[u] > d ? true : false;
                 RemoveEdge(T1, u, v, visitado);
-                FindEdge(G, T1, LH, L, OH, visitado, u, v, e_1, e_2, adjlist); 
-                
+
+                if(orderingMode == 0)
+                    FindEdge_Degree(G, T1, LH, L, OH, visitado, u, v, e_1, e_2, adjlist); 
+                else
+                    FindEdge_Pagerank(G, T1, LH, L, OH, visitado, u, v, e_1, e_2, adjlist, pagerank); 
+
+
                 // improvement++;
                 // igraph_t auxT;
                 // igraph_copy(&auxT, &T1);
@@ -424,7 +425,7 @@ bool Heuristic::Custom_Neighbor(igraph_t &G, igraph_t &T1, bool *LH, int * L, bo
 
                 if(degree(T1, v)+L[v] <= d || (flag && degree(T1, u)+L[u] <= d ))
                 {   
-                    if(modo == 0)
+                    if(selectionMode == 0)
                         break;
                     
                     int auxDmbv = 0;
@@ -443,7 +444,7 @@ bool Heuristic::Custom_Neighbor(igraph_t &G, igraph_t &T1, bool *LH, int * L, bo
                 }
             }
 
-            if(modo == 0 && (degree(T1, v)+L[v] <= d || (flag && degree(T1, u)+L[u] <= d )))
+            if(selectionMode == 0 && (degree(T1, v)+L[v] <= d || (flag && degree(T1, u)+L[u] <= d )))
             {
                 S.clear();
                 return true;
@@ -454,7 +455,7 @@ bool Heuristic::Custom_Neighbor(igraph_t &G, igraph_t &T1, bool *LH, int * L, bo
 
     igraph_copy(&T1, &bestT);
     igraph_destroy(&bestT);
-    if(minAtualDmbv  < qtdInicialDmbv && modo != 0)
+    if((minAtualDmbv  < qtdInicialDmbv) && selectionMode != 0)
         return true;
 
     return false;
@@ -518,7 +519,7 @@ bool Heuristic::BestNeighbor_by_degree(igraph_t &G, igraph_t &T1, bool *LH, int 
                 // cout << v + 1 << "--" << u + 1 << endl;
                 flag = degree(T1, u)+L[u] > d ? true : false;
                 RemoveEdge(T1, u, v, visitado);
-                FindEdge(G, T1, LH, L, OH, visitado, u, v, e_1, e_2, adjlist); 
+                FindEdge_Degree(G, T1, LH, L, OH, visitado, u, v, e_1, e_2, adjlist); 
                 
                 improvement++;
                 // igraph_t auxT;
@@ -617,7 +618,7 @@ bool Heuristic::BestNeighbor_by_pagerank(igraph_t &G, igraph_t &T1, bool *LH, in
                 // cout << v + 1 << "--" << u + 1 << endl;
                 flag = degree(T1, u)+L[u] > d ? true : false;
                 RemoveEdge(T1, u, v, visitado);
-                FindEdge(G, T1, LH, L, OH, visitado, u, v, e_1, e_2, adjlist); 
+                FindEdge_Degree(G, T1, LH, L, OH, visitado, u, v, e_1, e_2, adjlist); 
                 
                 improvement++;
                 // igraph_t auxT;
@@ -704,7 +705,7 @@ bool Heuristic::FirstBestNeighbor_by_degree(igraph_t &G, igraph_t &T1, bool *LH,
                 u = igraph_vector_e(&AdjV, j);
                 flag = degree(T1, u)+L[u] > d ? true : false;
                 RemoveEdge(T1, u, v, visitado);
-                FindEdge(G, T1, LH, L, OH, visitado, u, v, e_1, e_2, adjlist); 
+                FindEdge_Degree(G, T1, LH, L, OH, visitado, u, v, e_1, e_2, adjlist); 
                 
                 improvement++;
                 // igraph_t auxT;
@@ -785,7 +786,7 @@ bool Heuristic::FirstBestNeighbor_by_pagerank(igraph_t &G, igraph_t &T1, bool *L
                 u = igraph_vector_e(&AdjV, j);
                 flag = degree(T1, u)+L[u] > d ? true : false;
                 RemoveEdge(T1, u, v, visitado);
-                FindEdge(G, T1, LH, L, OH, visitado, u, v, e_1, e_2, adjlist); 
+                FindEdge_Degree(G, T1, LH, L, OH, visitado, u, v, e_1, e_2, adjlist); 
 
                 improvement++;
                 // igraph_t auxT;
@@ -865,7 +866,7 @@ bool Heuristic::FirstBestNeighborStar_by_degree(igraph_t &G, igraph_t &T1, bool 
                 grauV = degree(T1, v);
                 flag = degree(T1, u)+L[u] > d ? true : false;
                 RemoveEdge(T1, u, v, visitado);
-                FindEdge(G, T1, LH, L, OH, visitado, u, v, e_1, e_2, adjlist); 
+                FindEdge_Degree(G, T1, LH, L, OH, visitado, u, v, e_1, e_2, adjlist); 
                 
                 improvement++;
                 igraph_t auxT;
@@ -947,7 +948,7 @@ bool Heuristic::FirstBestNeighborStar_by_pagerank(igraph_t &G, igraph_t &T1, boo
                 grauV = degree(T1, v);
                 flag = degree(T1, u)+L[u] > d ? true : false;
                 RemoveEdge(T1, u, v, visitado);
-                FindEdge(G, T1, LH, L, OH, visitado, u, v, e_1, e_2, adjlist); 
+                FindEdge_Degree(G, T1, LH, L, OH, visitado, u, v, e_1, e_2, adjlist); 
                 
                 improvement++;
                 igraph_t auxT;
@@ -1041,7 +1042,7 @@ void Heuristic::RemoveEdge(igraph_t &T1, int u, int v, int *visitado)
 }
 
 // Victor: Tenta encontrar uma aresta diferente de {u, v} que conecta as subárvores Tu e Tv de modo que T tenha menos vértices d-branch.
-void Heuristic::FindEdge(igraph_t &G, igraph_t &T1, bool *LH, int *L, bool * OH,int *visitado, int u, int v, int &e_1,int &e_2, igraph_adjlist_t &adjlist)
+void Heuristic::FindEdge_Degree(igraph_t &G, igraph_t &T1, bool *LH, int *L, bool * OH,int *visitado, int u, int v, int &e_1,int &e_2, igraph_adjlist_t &adjlist)
 {
     int i, j, optionIJ = CASE_33, optionI = CASE_3, n = igraph_vcount(&G);
     int edge[6][2] = {{-1,-1},{-1,-1},{-1,-1},{-1,-1},{-1,-1},{-1,-1}};
@@ -1198,6 +1199,201 @@ void Heuristic::FindEdge(igraph_t &G, igraph_t &T1, bool *LH, int *L, bool * OH,
                                             {
                                                 optionIJ = CASE_33;
                                                 wIJ = degree(T1, j) + degree(T1, i);
+                                                if(wIJ > weight[CASE_33])
+                                                {
+                                                    edge[CASE_33][0] = i;
+                                                    edge[CASE_33][1] = j;
+                                                    weight[CASE_33] = wIJ;
+                                                }
+                                            }
+                                            break;
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    e_1 = edge[optionIJ][0];
+    e_2 = edge[optionIJ][1];
+}
+
+void Heuristic::FindEdge_Pagerank(igraph_t &G, igraph_t &T1, bool *LH, int *L, bool * OH,int *visitado, 
+                                    int u, int v, int &e_1,int &e_2, igraph_adjlist_t &adjlist, vector<float> &pagerank)
+{
+    int i, j, optionIJ = CASE_33, optionI = CASE_3, n = igraph_vcount(&G);
+    int edge[6][2] = {{-1,-1},{-1,-1},{-1,-1},{-1,-1},{-1,-1},{-1,-1}};
+    float weight[6]= {(float) 2*n, (float) 2*n, (float) 2*n, (float) 2*n, (float) 2*n, (float) 0};
+    float wIJ;
+    igraph_vector_int_t *adjVert;
+    
+    e_1 = e_2 = -1;
+
+    for(i = 0; i < n; i++)
+    {
+        if(visitado[i] == u)    //the subtree of u
+        {
+            bool explore = false;
+
+            if(LH[i])
+                {explore = true; optionI = CASE_1;}
+
+            if(optionIJ >= CASE_12 && (degree(T1, i)+L[i] < d || ((i == u || i == v) && degree(T1, i)+L[i]-1 < d)) )
+                {explore = true; optionI = CASE_2;}
+
+            if(!LH[i] && optionIJ >= CASE_13 && (degree(T1, i)+L[i] > d || ((i == u || i == v) && degree(T1, i)+L[i]-1 > d)) )
+                {explore = true; optionI = CASE_3;}
+
+            adjVert = igraph_adjlist_get(&adjlist, i);
+            for(int k = 0; k < igraph_vector_int_size(adjVert) && explore; ++k)
+            {
+                j = igraph_vector_int_e(adjVert, k);
+                if(visitado[j] == v)    //the subtree of v
+                {
+                    if( !((i == u && j == v) || (i == v && j == u)) )
+                    {
+                        ///select the best candidate edge
+
+                        if(LH[j])       // j = CASE_1
+                        {
+                            switch(optionI) 
+                            {
+                              case CASE_1:  optionIJ = CASE_11;
+                                            // wIJ = degree(G, i) + degree(G, j) - n*OH[i] - n*OH[j];
+                                            wIJ = pagerank[i] + pagerank[j];
+                                            if(wIJ < weight[CASE_11])
+                                            {
+                                                edge[CASE_11][0] = i;
+                                                edge[CASE_11][1] = j;
+                                                weight[CASE_11] = wIJ;
+                                            }
+                                            break;
+
+                              case CASE_2:  if(optionIJ >= CASE_12)
+                                            {
+                                                optionIJ = CASE_12;
+                                                // wIJ = degree(G, i) - n*OH[i] + degree(G, j);
+                                                wIJ = pagerank[i] + pagerank[j];
+                                                if(wIJ < weight[CASE_12])
+                                                {
+                                                    edge[CASE_12][0] = i;
+                                                    edge[CASE_12][1] = j;
+                                                    weight[CASE_12] = wIJ;
+                                                }
+                                            }
+                                            break;
+
+                              case CASE_3:  if(optionIJ >= CASE_13)
+                                            {
+                                                optionIJ = CASE_13;
+                                                // wIJ = degree(G, i) - n*OH[i] - degree(T1, j);
+                                                wIJ = pagerank[i] + pagerank[j];
+                                                if(wIJ < weight[CASE_13])
+                                                {
+                                                    edge[CASE_13][0] = i;
+                                                    edge[CASE_13][1] = j;
+                                                    weight[CASE_13] = wIJ;
+                                                }
+                                            }
+                                            break;
+                            }
+
+                        }
+
+                        if( optionIJ >= CASE_12 && (degree(T1, j)+L[j] < d || ( (j == u || j == v) && degree(T1, j)+L[j]-1 < d)) )  // j = CASE_2
+                        {
+                            switch(optionI) 
+                            {
+                              case CASE_1:  if(optionIJ >= CASE_12) //CASE21
+                                            {
+                                                optionIJ = CASE_12;
+                                                // wIJ = degree(G, i) + degree(G, j) - n*OH[j] ;
+                                                wIJ = pagerank[i] + pagerank[j];
+                                                if(wIJ < weight[CASE_12])
+                                                {
+                                                    edge[CASE_12][0] = i;
+                                                    edge[CASE_12][1] = j;
+                                                    weight[CASE_12] = wIJ;
+                                                }
+                                            }
+                                            break;
+
+                              case CASE_2:  if(optionIJ >= CASE_22)
+                                            {
+                                                optionIJ = CASE_22;
+                                                // wIJ = degree(G, i) + degree(G, j);
+                                                wIJ = pagerank[i] + pagerank[j];
+
+                                                if(wIJ < weight[CASE_22])
+                                                {
+                                                    edge[CASE_22][0] = i;
+                                                    edge[CASE_22][1] = j;
+                                                    weight[CASE_22] = wIJ;
+                                                }
+                                            }
+                                            break;
+
+                              case CASE_3:  if(optionIJ >= CASE_23)
+                                            {
+                                                optionIJ = CASE_23;
+                                                // wIJ = degree(G, i) - degree(T1, j);
+                                                wIJ = pagerank[i] + pagerank[j];
+
+                                                if(wIJ < weight[CASE_23])
+                                                {
+                                                    edge[CASE_23][0] = i;
+                                                    edge[CASE_23][1] = j;
+                                                    weight[CASE_23] = wIJ;
+                                                }
+                                            }
+                                            break;
+                            }
+                        }
+
+                        if(!LH[j] && optionIJ >= CASE_13 && (degree(T1, j)+L[j] > d || ((j == u || j == v) && degree(T1, j)+L[j]-1 > d)) )  // j = CASE_3
+                        {
+                            switch(optionI)
+                            {
+                              case CASE_1:  if(optionIJ >= CASE_13) //CASE_31
+                                            {
+                                                optionIJ = CASE_13; 
+                                                // wIJ = degree(G, j) - n*OH[j] - degree(T1, i);
+                                                wIJ = pagerank[i] + pagerank[j];
+
+                                                if(wIJ < weight[CASE_13])
+                                                {
+                                                    edge[CASE_13][0] = i;
+                                                    edge[CASE_13][1] = j;
+                                                    weight[CASE_13] = wIJ;
+                                                }
+                                            }
+                                            break;
+
+                              case CASE_2:  if(optionIJ >= CASE_23) //CASE_32
+                                            {
+                                                optionIJ = CASE_23;
+                                                // wIJ = degree(G, j) - degree(T1, i);
+                                                wIJ = pagerank[i] + pagerank[j];
+
+                                                if(wIJ < weight[CASE_23])
+                                                {
+                                                    edge[CASE_23][0] = i;
+                                                    edge[CASE_23][1] = j;
+                                                    weight[CASE_23] = wIJ;
+                                                }
+                                            }
+                                            break;
+
+                              case CASE_3:  if(optionIJ >= CASE_33)
+                                            {
+                                                optionIJ = CASE_33;
+                                                // wIJ = degree(T1, j) + degree(T1, i);
+                                                wIJ = pagerank[i] + pagerank[j];
+
                                                 if(wIJ > weight[CASE_33])
                                                 {
                                                     edge[CASE_33][0] = i;
