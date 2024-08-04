@@ -1,2 +1,0 @@
-Instancias/Spd_RF2_20_27_211.txt	1	0.0000650000	True
-Instancias/Spd_RF2_11_13_100.txt	2	0.0000440000	True
