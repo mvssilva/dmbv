@@ -34,6 +34,7 @@ class Heuristic
         void Select_6(igraph_t &, int *, int *, int &, int*, bool* , igraph_adjlist_t &);
         void absorve(int* , int , int , int *);
 
+        bool Custom_Neighbor(igraph_t &, igraph_t &, bool *, int *, bool *, int *, igraph_adjlist_t &, vector<float> &pagerank, const std::string &, string &, int, int);
 
         bool FirstBestNeighbor_by_degree(igraph_t &, igraph_t &, bool *, int *, bool *, int *, igraph_adjlist_t &, vector<float> &pagerank, const std::string &, string &);
         bool FirstBestNeighbor_by_pagerank(igraph_t &, igraph_t &, bool *, int *, bool *, int *, igraph_adjlist_t &, vector<float> &pagerank, const std::string &, string &);
@@ -65,9 +66,9 @@ class Heuristic
         Heuristic();
         Heuristic(int);
         virtual ~Heuristic();
-        void ILS(igraph_t &, int *, bool *,  vector<float> &, const string &);
+        void ILS(igraph_t &, int *, bool *,  vector<float> &, const string &, int, int, int);
         void InitialConstruction(igraph_t &, int *, bool *);
-        void LocalSearch(igraph_t &, int *, bool *, igraph_adjlist_t &, vector<float> &, const std::string &, string &);
+        void LocalSearch(igraph_t &, int *, bool *, igraph_adjlist_t &, vector<float> &, const std::string &, string &, int, int);
         bool Pertubation_by_degree(igraph_t &, int *, bool *, int *, int &,int &,int &,int &, bool **, igraph_adjlist_t &, vector<float> &pagerank);
         bool Pertubation_by_pagerank(igraph_t &, int *, bool *, int *, int &,int &,int &,int &, bool **, igraph_adjlist_t &, vector<float> &pagerank);
         void make_tree(igraph_t &, int*, bool *, igraph_adjlist_t &);

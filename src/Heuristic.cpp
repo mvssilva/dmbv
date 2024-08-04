@@ -181,7 +181,8 @@ std::string extractFileName(const std::string &filePath) {
  * @param L Ponteiro para array de inteiro do tamanho da quantidade de vertices de g.
  * @param OH Ponteiro para array de booleanos do tamanho da quantidade de vertices de g (inicializado como falso).
  */
-void Heuristic::ILS(igraph_t &g, int *L, bool *OH,  vector<float> &pagerank, const string &pathcomplete)
+void Heuristic::ILS(igraph_t &g, int *L, bool *OH,  vector<float> &pagerank, 
+                    const string &pathcomplete, int local, int pertu, int modo)
 {
 
     std::string path = extractFileName(pathcomplete);
@@ -205,7 +206,7 @@ void Heuristic::ILS(igraph_t &g, int *L, bool *OH,  vector<float> &pagerank, con
         return;
     
     string step1 = "1-FBPG-localsearch";
-    LocalSearch(g,L,OH,adjlist, pagerank, path, step1);
+    LocalSearch(g,L,OH,adjlist, pagerank, path, step1, modo, local);
     string step2 = "2-FBPG-result";
     // saveGraphvizFile(path, step2, g);
 
@@ -294,7 +295,8 @@ void Heuristic::ILS(igraph_t &g, int *L, bool *OH,  vector<float> &pagerank, con
 
 /***************************LOCAL SEARCH*********************************************************************/
 // Victor: Visa aprimorar a árvore inicial obtida através do procedimento make_tree. Seção 2.2.2 do artigo.
-void Heuristic::LocalSearch(igraph_t &G, int *L, bool * OH, igraph_adjlist_t &adjlist, vector<float> &pagerank, const std::string &path, string &step)
+void Heuristic::LocalSearch(igraph_t &G, int *L, bool * OH, igraph_adjlist_t &adjlist, vector<float> &pagerank, 
+                            const std::string &path, string &step, int modo, int local)
 {
     igraph_t T1;
     bool improvement, * LH;
@@ -312,7 +314,7 @@ void Heuristic::LocalSearch(igraph_t &G, int *L, bool * OH, igraph_adjlist_t &ad
     do
     {   
         step_local = step +"-"+ to_string(cont);
-        improvement = BestNeighbor_by_degree(G, T1, LH, L, OH, visitado, adjlist, pagerank, path, step_local);
+        improvement = Custom_Neighbor(G, T1, LH, L, OH, visitado, adjlist, pagerank, path, step_local, modo, local);
         
         if(improvement)
             igraph_copy(&T, &T1);
@@ -341,6 +343,124 @@ void Heuristic::LocalSearch(igraph_t &G, int *L, bool * OH, igraph_adjlist_t &ad
     delete []visitado;
     delete []LH;
 }
+
+void orderer_vertex(igraph_t &T, vector< pair<float,int> > S, vector<float> &pagerank, int n, bool *LH, int * L, bool *OH, int & min, int local, int d){
+
+    if(local == 0){
+        for(int i = 0; i < n; i++)
+        {
+            LH[i] = OH[i];
+            if(degree(T, i) + L[i] > d && !OH[i]){
+                S.push_back(make_pair(degree(T, i) + L[i], i) );
+                min++;
+            }
+        }
+    }
+    else{
+        for(int i = 0; i < n; i++)
+        {
+            LH[i] = OH[i];
+            if(degree(T, i) + L[i] > d && !OH[i]){
+                S.push_back(make_pair(pagerank[i], i) );
+                min++;
+            }
+        }
+    }
+
+    sort(S.begin(), S.end());
+}
+
+
+bool Heuristic::Custom_Neighbor(igraph_t &G, igraph_t &T1, bool *LH, int * L, bool *OH, int *visitado, igraph_adjlist_t &adjlist, 
+                                vector<float> &pagerank, const std::string & path, string &step, int modo, int local)
+{
+    /*** return the first tree with at least one less HV ***/
+    bool flag;
+    int n = igraph_vcount(&G);
+    int u, v, e_1, e_2;
+
+    igraph_vector_t AdjV;
+    igraph_vector_init(&AdjV, 0);
+
+    //initialize the variables
+    igraph_copy(&T1, &T);
+
+    vector< pair<float,int> > S;
+    vector< pair<float,int> > :: iterator itS;
+    
+    igraph_t bestT;
+    igraph_copy(&bestT, &T);
+    int minAtualDmbv = 0;
+    
+    orderer_vertex(T, S, pagerank, n, LH, L, OH, minAtualDmbv, local, d);
+
+    int qtdInicialDmbv = minAtualDmbv;
+    int improvement = 0;
+
+    //exploring S
+    for(itS = S.begin(); itS != S.end(); ++itS)
+    {   
+        v = (*itS).second; 
+        if(degree(T1, v)+L[v] > d)
+        {
+            igraph_neighbors(&T1, &AdjV, v, IGRAPH_OUT);
+            for(int j = 0; j < igraph_vector_size(&AdjV); j++)
+            {
+                u = igraph_vector_e(&AdjV, j);
+                flag = degree(T1, u)+L[u] > d ? true : false;
+                RemoveEdge(T1, u, v, visitado);
+                FindEdge(G, T1, LH, L, OH, visitado, u, v, e_1, e_2, adjlist); 
+                
+                // improvement++;
+                // igraph_t auxT;
+                // igraph_copy(&auxT, &T1);
+                // print_graphviz_neighbor(G, auxT, e_1, e_2, v, u, path, step, improvement);
+                
+                if(e_1 != -1)   // and also e_2         
+                {   
+                    removeEdge(T1, u,v);
+                    addEdge(T1, e_1, e_2);
+                }
+
+                if(degree(T1, v)+L[v] <= d || (flag && degree(T1, u)+L[u] <= d ))
+                {   
+                    if(modo == 0)
+                        break;
+                    
+                    int auxDmbv = 0;
+                    for (int i = 0; i < n; i++)
+                    {
+                        if (degree(T1, i) + L[i] > d && !OH[i])
+                        {
+                            auxDmbv++;
+                        }
+                    }
+
+                    if(auxDmbv < minAtualDmbv){
+                        minAtualDmbv = auxDmbv;
+                        igraph_copy(&bestT, &T1);
+                    }
+                }
+            }
+
+            if(modo == 0 && (degree(T1, v)+L[v] <= d || (flag && degree(T1, u)+L[u] <= d )))
+            {
+                S.clear();
+                return true;
+            }
+            LH[v] = true;
+        }
+    }
+
+    igraph_copy(&T1, &bestT);
+    igraph_destroy(&bestT);
+    if(minAtualDmbv  < qtdInicialDmbv && modo != 0)
+        return true;
+
+    return false;
+}
+
+
 
 /*
     Variação do algoritmo FirstBestNeighbor implementado por moreno na tese.
