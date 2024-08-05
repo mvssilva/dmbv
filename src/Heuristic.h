@@ -2,6 +2,7 @@
 #define HEURISTIC_H
 
 #include "Graph.h"
+#include "GrafoRBEP.h"
 #include <algorithm>
 
 #define ADJ_SUP 0
@@ -67,12 +68,13 @@ class Heuristic
         Heuristic();
         Heuristic(int);
         virtual ~Heuristic();
-        void ILS(igraph_t &, int *, bool *,  vector<float> &, const string &, int, int, int);
+        void ILS(igraph_t &, int *, bool *,  vector<float> &, const string &, int, int, int, int);
         void InitialConstruction(igraph_t &, int *, bool *);
         void LocalSearch(igraph_t &, int *, bool *, igraph_adjlist_t &, vector<float> &, const std::string &, string &, int, int);
         bool Pertubation_by_degree(igraph_t &, int *, bool *, int *, int &,int &,int &,int &, bool **, igraph_adjlist_t &, vector<float> &pagerank);
         bool Pertubation_by_pagerank(igraph_t &, int *, bool *, int *, int &,int &,int &,int &, bool **, igraph_adjlist_t &, vector<float> &pagerank);
-        void make_tree(igraph_t &, int*, bool *, igraph_adjlist_t &);
+        void make_tree_ils(igraph_t &, int*, bool *, igraph_adjlist_t &);
+        void make_tree_rbep(igraph_t &, int*, bool *, igraph_adjlist_t &, const string &, vector<float> &pagerank);
 
         void setParams(int,int,int,int);
         int get_numHV()const{return numHV;}

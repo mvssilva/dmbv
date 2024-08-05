@@ -29,7 +29,7 @@ INPUT_FILES := $(wildcard Instancias/large/*.txt)
 all : main
 
 main: main.o
-	$(CCC) $(CCFLAGS) main.cpp src/Heuristic.cpp src/Graph.cpp  -o dmbv $(CCLNFLAGS)
+	$(CCC) $(CCFLAGS) main.cpp src/Heuristic.cpp src/Graph.cpp src/GrafoRBEP.cpp src/RBEP.cpp src/Roleta.cpp -o dmbv $(CCLNFLAGS)
 
 .cpp.o:
 	$(CCC) $(CCFLAGS)  $< -c -o $@ $(CCLNFLAGS)
@@ -39,12 +39,12 @@ run: main.o
 	@rm -f 
 	@for input_file in $(INPUT_FILES); do \
 	    echo "Executando $$input_file ..."; \
-	    ./dmbv $$input_file 2 2 0 0 0; \
+	    ./dmbv $$input_file 2 2 1 0 0 0; \
 	done
 	@echo "Resultados salvos!"
 
 runsimples: main.o
-	./dmbv Instancias/small/Spd_RF2_20_27_219.txt 2 2 0 0 0
+	./dmbv Instancias/small/Spd_RF2_20_27_219.txt 2 2 1 0 0 0
 
 clean:
 	rm --force main main.o
